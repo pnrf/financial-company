@@ -1,0 +1,11 @@
+.page {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1920px;
+  min-width: inherit;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #fff;
+}
