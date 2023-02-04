@@ -7,3 +7,35 @@
 
 /** root */
 @import url('./root/root.css');
+
+/** Код */
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+
+.link:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header {
+  height: 53px;
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+  border-bottom: 1px solid #CBD8E9;;
+}
+
+
+.breadcrumbs__link {
+  border-bottom: 1px solid #8FB1C7;
+}
