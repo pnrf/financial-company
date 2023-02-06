@@ -25,6 +25,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "core-js": "^3.27.2"
+    "core-js": "^3.27.2",
+    "swiper": "^9.0.3"
   }
 }

@@ -22,9 +22,8 @@
     <!-- header -->
     <header class="header">
       <div class="header__container">
-        <div class="header__top-menu">
-          <h1 class="header__title">Инвестиционно-финансовая компания</h1>
-          <!-- <a class="link header__location" role="button" href="#" aria-label="Текущий регион" title="Выбрать регион из списка">Город Казань</a> -->
+        <div class="header__menu">
+          <h2 class="header__title">Инвестиционно-финансовая компания</h2>
           <ul class="list nav header__nav">
             <li class="nav__item"><a class="link header__location" role="button" href="#" aria-label="Текущий регион" title="Выбрать регион из списка">Город Казань</a></li>
             <li class="nav__item"><a class="link nav__link" href="#">О компании</a></li>
@@ -46,19 +45,25 @@
             <li class="nav__item"><a class="link nav__link" href="#">Рассрочка</a></li>
             <li class="nav__item"><a class="link nav__link" href="#">Калькулятор</a></li>
           </ul>
-          <a class="link phone header__phone" href="tel:+88002700700-">8 800 2700 700</a>
-          <div class="header__search">
-            <a class="header__search-btn" aria-label="Поиск по сайту" href="#"></a>
-            <div class="header__search-overlay"></div>
-          </div>
 
-          <a class="button button_type_link button_size_l button_style_blue" href="#" target="_blank" rel="noopener noreferrer">Личный кабинет</a>
-          <button class="button button_size_l button_style_white" href="#" target="_blank" rel="noopener noreferrer">Онлайн-заявка</button>
+          <div class="header__wrapper">
+            <a class="link phone header__phone" href="tel:+88002700700-">8 800 2700 700</a>
+            <div class="header__search">
+              <a class="header__search-btn" aria-label="Поиск по сайту" href="#"></a>
+              <div class="header__search-overlay"></div>
+            </div>
+
+            <a class="button button_type_link button_size_l button_style_blue" href="#" target="_blank" rel="noopener noreferrer">Личный кабинет</a>
+            <button class="button button_size_l button_style_white" href="#" target="_blank" rel="noopener noreferrer">Онлайн-заявка</button>
+          </div>
         </div>
 
-        <ul class="list breadcrumbs header__breadcrumbs">
+        <ul class="list breadcrumbs">
           <li class="breadcrumbs__item">
-            <a class="link breadcrumbs__link" href="#">Главная</a>
+            <a class="link breadcrumbs__link" href="#">главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="link link_disabled" href="#">инвестиции</a>
           </li>
         </ul>
       </div>
@@ -69,21 +74,141 @@
 
       <!-- intro -->
       <section class="section intro">
+        <div class="section__container intro__container">
+            <div class="section__content">
+
+              <div class="swiper swiper_section_intro">
+                <div class="link swiper__button-prev swiper__button-prev_section_intro"></div>
+                <div class="link swiper__button-next swiper__button-next_section_intro"></div>
+                <div class="swiper-pagination swiper-pagination_section_intro swiper-pagination_position"></div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <h1 class="intro__slide-title">Инвестируйте с повышенной доходностью до 19% годовых</h1>
+                    <p class="intro__slide-text">100% обеспеченность активами, прибыль каждые 3 месяца!</p>
+                    <img class="intro__slide-img" src="<%=require('../images/pics/bgr-man-01.png')%>" alt="Фоновая картинка мужчины, окрыленного условиями инвестирования">
+                    <div class="intro__buttons">
+                      <a class="button button_type_link button_size_xl button_style_blue" href="#" target="_blank" rel="noopener noreferrer">Инвестировать</a>
+                      <a class="button button_type_link button_size_s button_style_white" href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="intro__slide-img" src="<%=require('../images/pics/bgr-man-01.png')%>" alt="Фоновая картинка мужчины, окрыленного условиями инвестирования">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+      </section>
+
+      <!-- products -->
+      <section class="section products">
+        <div class="section__content">
+          <h2 class="section__title">Рекомендуемые продукты</h2>
+
+          <div class="products__cards">
+            <div class="card">
+              <div class="card__content">
+                <h3 class="card__subtitle">Инвестиции</h3>
+                <h4 class="card__title">Вклад Комфорт</h4>
+                <div class="card__stat-data">
+                  <p class="card__stat-data-value">17,5%</p>
+                  <p class="card__stat-data-label">Доходность, до</p>
+                </div>
+                <div class="card__stat-data">
+                  <p class="card__stat-data-value">90 дней</p>
+                  <p class="card__stat-data-label">Срок вклада, от</p>
+                </div>
+                <p class="card__text">Доход выплачивается по окончании срока договора, возможно досрочное расторжение</p>
+                <div class="card__buttons">
+                  <a class="button button_type_link button_size_166x48 button_style_blue" href="#" target="_blank" rel="noopener noreferrer">Инвестировать</a>
+                  <a class="button button_type_link button_size_133x48 button_style_white" href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>
+                </div>
+              </div>
+              <img class="products__card-img" src="<%=require('../images/pics/bgr-man-02.png')%>" alt="Фоновая картинка мужчины">
+            </div>
+
+            <div class="card">
+              <div class="card__content">
+                <h3 class="card__subtitle">Финансирование</h3>
+                <h4 class="card__title">Авто Рассрочка</h4>
+                <div class="card__stat-data card__stat-data_margin-bottom_s">
+                  <p class="card__stat-data-value">5 млн</p>
+                  <p class="card__stat-data-label">Сумма, до</p>
+                </div>
+                <div class="card__stat-data card__stat-data_margin-bottom_s">
+                  <p class="card__stat-data-value cart__stat-data-value_font-size_s">3 лет</p>
+                  <p class="card__stat-data-label">Срок, до</p>
+                </div>
+                <p class="card__text">Отсутствие обязательности страхования КАСКО. Первоначальный взнос от 10%</p>
+                <div class="card__buttons">
+                  <a class="button button_type_link button_size_130x48 button_style_blue" href="#" target="_blank" rel="noopener noreferrer">Инвестировать</a>
+                  <a class="button button_type_link button_size_133x48 button_style_white" href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>
+                </div>
+              </div>
+              <img class="products__card-img" src="<%=require('../images/pics/bgr-car-01.png')%>" alt="Фоновая картинка спортивного автомобиля">
+            </div>
+
+            <div class="card">
+              <div class="card__content">
+                <h3 class="card__subtitle">Финансирование</>
+                <h4 class="card__title">Экспресс Рассрочка</h4>
+                <div class="card__stat-data card__stat-data_margin-bottom_s">
+                  <p class="card__stat-data-value cart__stat-data-value_font-size_s">1 млн</p>
+                  <p class="card__stat-data-label">Сумма, до</p>
+                </div>
+                <div class="card__stat-data card__stat-data_margin-bottom_s">
+                  <p class="card__stat-data-value">3 лет</p>
+                  <p class="card__stat-data-label">Срок, до</p>
+                </div>
+                <p class="card__text">Финансирование физическим лицам для приобретения необходимых товаров</p>
+                <div class="card__buttons">
+                  <a class="button button_type_link button_size_130x48 button_style_blue" href="#" target="_blank" rel="noopener noreferrer">Инвестировать</a>
+                  <a class="button button_type_link button_size_133x48 button_style_white" href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>
+                </div>
+              </div>
+              <img class="products__card-img" src="<%=require('../images/pics/bgr-washing-machine-01.png')%>" alt="Фоновая картинка мужчины">
+            </div>
+
+            <div class="card">
+              <div class="card__content">
+                <h3 class="card__subtitle">Инвестиции</h3>
+                <h4 class="card__title">Вклад Активный</h4>
+                <div class="card__stat-data">
+                  <p class="card__stat-data-value">16,5%</p>
+                  <p class="card__stat-data-label">Доходность, до</p>
+                </div>
+                <div class="card__stat-data">
+                  <p class="card__stat-data-value">90 дней</p>
+                  <p class="card__stat-data-label">Срок вклада, от</p>
+                </div>
+                <p class="card__text">Доход выплачивается по окончании срока договора, возможно досрочное расторжение</p>
+                <div class="card__buttons">
+                  <a class="button button_type_link button_size_166x48 button_style_blue" href="#" target="_blank" rel="noopener noreferrer">Инвестировать</a>
+                  <a class="button button_type_link button_size_133x48 button_style_white" href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>
+                </div>
+              </div>
+              <img class="products__card-img" src="<%=require('../images/pics/bgr-man-03.png')%>" alt="Фоновая картинка мужчины">
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- section -->
+      <section class="section">
         <div class="section__container">
           <div class="section__wrapper">
             <div class="section__content">
               <p class="section__subtitle intro__subtitle">jslfjslfjslf</p>
-              <p>jslfjslfjslf</p>
-              <p>jslfjslfjslf</p>
-              <p>jslfjslfjslf</p>
-              <p>jslfjslfjslf</p>
-              <p>jslfjslfjslf</p>
               <p>jslfjslfjslf</p>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <!-- footer -->
     <footer class="footer"></footer>
   </div>
 </body>
