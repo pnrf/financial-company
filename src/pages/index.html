@@ -105,9 +105,9 @@
       <section class="section products">
         <div class="section__content">
           <h2 class="section__title">Рекомендуемые продукты</h2>
-
           <div class="products__cards">
-            <div class="card">
+
+            <div class="card card_size_big">
               <div class="card__content">
                 <h3 class="card__subtitle">Инвестиции</h3>
                 <h4 class="card__title">Вклад Комфорт</h4>
@@ -128,28 +128,30 @@
               <img class="products__card-img" src="<%=require('../images/pics/bgr-man-02.png')%>" alt="Фоновая картинка мужчины">
             </div>
 
-            <div class="card">
-              <div class="card__content">
-                <h3 class="card__subtitle">Финансирование</h3>
-                <h4 class="card__title">Авто Рассрочка</h4>
-                <div class="card__stat-data card__stat-data_margin-bottom_s">
-                  <p class="card__stat-data-value">5 млн</p>
-                  <p class="card__stat-data-label">Сумма, до</p>
+            <div class="card card_size_small">
+              <div class="card__wrapper">
+                <div class="card__content">
+                  <h3 class="card__subtitle">Финансирование</h3>
+                  <h4 class="card__title">Авто Рассрочка</h4>
+                  <div class="card__stat-data card__stat-data_margin-bottom_s">
+                    <p class="card__stat-data-value cart__stat-data-value_font-size_s">5 млн</p>
+                    <p class="card__stat-data-label">Сумма, до</p>
+                  </div>
+                  <div class="card__stat-data card__stat-data_margin-bottom_s">
+                    <p class="card__stat-data-value cart__stat-data-value_font-size_s">3 лет</p>
+                    <p class="card__stat-data-label">Срок, до</p>
+                  </div>
+                  <p class="card__text">Отсутствие обязательности страхования КАСКО. Первоначальный взнос от 10%</p>
+                  <div class="card__buttons">
+                    <a class="button button_type_link button_size_130x48 button_style_blue" href="#" target="_blank" rel="noopener noreferrer">Инвестировать</a>
+                    <a class="button button_type_link button_size_133x48 button_style_white" href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>
+                  </div>
                 </div>
-                <div class="card__stat-data card__stat-data_margin-bottom_s">
-                  <p class="card__stat-data-value cart__stat-data-value_font-size_s">3 лет</p>
-                  <p class="card__stat-data-label">Срок, до</p>
-                </div>
-                <p class="card__text">Отсутствие обязательности страхования КАСКО. Первоначальный взнос от 10%</p>
-                <div class="card__buttons">
-                  <a class="button button_type_link button_size_130x48 button_style_blue" href="#" target="_blank" rel="noopener noreferrer">Инвестировать</a>
-                  <a class="button button_type_link button_size_133x48 button_style_white" href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>
-                </div>
+                <img class="products__card-img products__card-img_position_top" src="<%=require('../images/pics/bgr-car-01.png')%>" alt="Фоновая картинка спортивного автомобиля">
               </div>
-              <img class="products__card-img" src="<%=require('../images/pics/bgr-car-01.png')%>" alt="Фоновая картинка спортивного автомобиля">
             </div>
 
-            <div class="card">
+            <div class="card card_size_small">
               <div class="card__content">
                 <h3 class="card__subtitle">Финансирование</>
                 <h4 class="card__title">Экспресс Рассрочка</h4>
@@ -158,7 +160,7 @@
                   <p class="card__stat-data-label">Сумма, до</p>
                 </div>
                 <div class="card__stat-data card__stat-data_margin-bottom_s">
-                  <p class="card__stat-data-value">3 лет</p>
+                  <p class="card__stat-data-value cart__stat-data-value_font-size_s">3 лет</p>
                   <p class="card__stat-data-label">Срок, до</p>
                 </div>
                 <p class="card__text">Финансирование физическим лицам для приобретения необходимых товаров</p>
@@ -167,10 +169,10 @@
                   <a class="button button_type_link button_size_133x48 button_style_white" href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>
                 </div>
               </div>
-              <img class="products__card-img" src="<%=require('../images/pics/bgr-washing-machine-01.png')%>" alt="Фоновая картинка мужчины">
+              <img class="products__card-img products__card-img_position_top" src="<%=require('../images/pics/bgr-washing-machine-01.png')%>" alt="Фоновая картинка мужчины">
             </div>
 
-            <div class="card">
+            <div class="card card_size_big">
               <div class="card__content">
                 <h3 class="card__subtitle">Инвестиции</h3>
                 <h4 class="card__title">Вклад Активный</h4>
@@ -191,6 +193,19 @@
               <img class="products__card-img" src="<%=require('../images/pics/bgr-man-03.png')%>" alt="Фоновая картинка мужчины">
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      <!-- advantages -->
+      <section class="section advantages">
+        <div class="section__content advantages__content">
+          <div class="advantages__elm advantages__elm_bgr_caret">
+            <p class="advantages__elm-text">Опыт команды в сфере партнерских финансов более 10 лет.
+              </p>
+          </div>
+          <div class="advantages__elm advantages__elm_bgr_target">
+            <p class="advantages__elm-text">Соответствие деятельности компании высоким этическим и правовым стандартам</p>
           </div>
         </div>
       </section>
