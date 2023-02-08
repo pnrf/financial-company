@@ -204,6 +204,11 @@
   height: 68px;
 }
 
+.button_size_252x48 {
+  width: 252px;
+  height: 48px;
+}
+
 .button_size_166x48 {
   width: 166px;
   height: 48px;
@@ -586,6 +591,294 @@
   color: #0000DE;
 }
 
+/* ---------- opportunities ---------- */
+
+.opportunities {
+  margin: 109px auto 112px;
+}
+
+.opportunities__container {
+  display: flex;
+  gap: 60px;
+}
+
+.opportunities__theses {
+  max-width: 330px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.opportunities__theses-list {
+  /* margin-bottom: 60px; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 33px;
+}
+
+.opportunities__theses-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.opportunities__icon {
+  width: 64px;
+  height: 64px;
+  background: left top/ 30px 52px no-repeat url('../images/pics/bgr-abstract-02.svg');
+}
+
+.opportunities__theses-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.opportunities__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.opportunities__charts {
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.opportunities__charts-item {
+  width: inherit;
+  /* height: inherit; */
+}
+
+.opportunities__subtitle {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.histogram {
+  margin-top: 15px;
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  gap: 51px;
+  /* background: linear-gradient(90deg, rgba(198, 217, 233, 0) 0%, #C6D9E9 49.48%, rgba(198, 217, 233, 0) 100%);
+  background-size: 100% 1px;
+  background-repeat: repeat-y; */
+}
+
+.histogram__section {
+  width: 95px;
+  /* height: inherit; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.histogram__label {
+  margin: 0 0 10px;
+}
+
+.histogram__label-value {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 110%;
+  color: #7C83A1;
+}
+
+.histogram__label-value_font_blue {
+  color: #355DFB;
+}
+
+.histogram__label-value_font-size_l {
+  font-size: 30px;
+}
+
+.histogram__label-period {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110%;
+  color: #7C83A1;
+}
+
+.histogram__label-period_font_blue {
+  color: #355DFB;
+}
+
+.histogram__bar {
+  width: 95px;
+  background-color: #C9CEE1;
+  border-radius: 18px 0px;
+}
+
+.histogram__bar_size_s {
+  height: 33px;
+}
+
+.histogram__bar_size_m {
+  height: 46px;
+}
+
+.histogram__bar_size_l {
+  height: 105px;
+}
+
+.histogram__bar_bgr-color_blue {
+  background-color: #355DFB;
+}
+
+.histogram__legend {
+  margin: 0;
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.histogram__legent_font_blue {
+  font-weight: 700;
+  color: #355DFB;
+}
+
+
+.linear-graph {
+  height: 91%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.linear-graph__image {
+  width: 364px;
+}
+
+.linear-graph__legend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.linear-graph__legend-item {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.linear-graph__legend-icon {
+  margin: auto 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #7C83A1;
+}
+
+.linear-graph__legend-icon_color_blue {
+  background-color: #355DFB;
+}
+
+.linear-graph__legend-text {
+  width: 100px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.opportunities__profit {
+  width: 100%;
+  margin-top: 37px;
+}
+
+.opportunities__line {
+  margin: 12px 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(198, 217, 233, 0) 0%, #C6D9E9 49.48%, rgba(198, 217, 233, 0) 100%);
+  background-repeat: no-repeat;
+  /* transform: matrix(0, 1, 1, 0, 0, 0); */
+}
+
+.opportunities__profit-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.opportunities__profit-item {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.opportunities__profit-icon {
+  background: left/ 20px 20px no-repeat url('../images/icons/check-circle-grey.svg');
+}
+
+.opportunities__profit-icon_style_blue {
+  background-image: url('../images/icons/check-circle-blue.svg');
+}
+
+.opportunities__profit-text {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.opportunities__profit-text_style_grey {
+  padding-left: 24px;
+  color: #7C83A1;
+}
+
+.opportunities__profit-text_style_blue {
+  padding-left: 24px;
+  color: #355DFB;
+}
+
+.opportunities__profit-text_style_bold {
+  font-weight: 700;
+}
+
+.opportunities__profit-progress-bar-bgr {
+  width: 340px;
+  height: 20px;
+  background-color: #EAF0F7;
+  border-radius: 14px 0px;
+}
+
+.opportunities__profit-progress-bar-bgr_style_blue {
+  background-color: #EAF0F7;
+}
+
+.opportunities__profit-progress-bar {
+  width: 76px;
+  height: 20px;
+  background-color: #9AA3C8;
+  border-radius: 14px 0px;
+}
+
+.opportunities__profit-progress-bar_style_blue {
+  width: 276px;
+  background-color: #355DFB;
+}
+
 /* ---------- section ---------- */
 
 .section {
@@ -618,7 +911,7 @@
 .section__title {
   margin: 0;
   padding-bottom: 30px;
-  max-width: 446px;
+  /* max-width: 446px; */
   font-weight: 300;
   font-size: 34px;
   line-height: 110%;

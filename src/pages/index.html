@@ -53,7 +53,7 @@
               <div class="header__search-overlay"></div>
             </div>
 
-            <a class="button button_type_link button_size_l button_style_blue" href="#" target="_blank" rel="noopener noreferrer">Личный кабинет</a>
+            <a class="button button_type_link button_size_l button_style_blue" role="button" href="#" target="_blank" rel="noopener noreferrer" aria-label="Личный кабинет" title="Перейти к авторизации в личный кабинет">Личный кабинет</a>
             <button class="button button_size_l button_style_white" href="#" target="_blank" rel="noopener noreferrer">Онлайн-заявка</button>
           </div>
         </div>
@@ -272,6 +272,137 @@
             </li>
 
           </ul>
+        </div>
+      </section>
+
+      <!-- opportunities -->
+      <section class="section opportunities">
+        <div class="section__content">
+          <h2 class="section__title">Ваши возможности с НурФинанс</h2>
+          <div class="opportunities__container">
+
+            <div class="opportunities__theses">
+              <ul class="list opportunities__theses-list">
+                <li class="opportunities__theses-item">
+                  <img class="opportunities__icon" src="<%=require('../images/icons/coin.svg')%>" alt="Фоновая иконка">
+                  <p class="opportunities__theses-text">Накапливайте, принося пользу окружающим (обществу)</p>
+                </li>
+                <li class="opportunities__theses-item">
+                  <img class="opportunities__icon" src="<%=require('../images/icons/wallet.svg')%>" alt="Фоновая иконка">
+                  <p class="opportunities__theses-text">Зарабатывайте честно и справедливо</p>
+                </li>
+                <li class="opportunities__theses-item">
+                  <img class="opportunities__icon" src="<%=require('../images/icons/chart-bar.svg')%>" alt="Фоновая иконка">
+                  <p class="opportunities__theses-text">Вкладывайте в реальные проверенные сделки</p>
+                </li>
+                <li class="opportunities__theses-item">
+                  <img class="opportunities__icon" src="<%=require('../images/icons/shield-chevron.svg')%>" alt="Фоновая иконка">
+                  <p class="opportunities__theses-text">Обеспечьте вложения надежными активами</p>
+                </li>
+              </ul>
+              <a class="button button_type_link button_size_252x48 button_style_blue" href="#" target="_blank">Инвестиционные продукты</a>
+            </div>
+
+            <div class="opportunities__wrapper">
+
+              <ul class="list opportunities__charts">
+
+                <li class="opportunities__charts-item">
+                  <h3 class="opportunities__subtitle">Получайте повышенный доход от вложений</h3>
+                  <ul class="list histogram">
+
+                    <li class="histogram__section">
+                      <div class="histogram__label">
+                        <span class="histogram__label-value">до <span class="histogram__label-value histogram__label-value_font-size_l">8%</span></span>
+                        <span class="histogram__label-period">годовых</span>
+                      </div>
+                      <div class="histogram__bar histogram__bar_size_s"></div>
+                      <p class="histogram__legend">Банковские вклады</p>
+                    </li>
+
+                    <li class="histogram__section">
+                      <div class="histogram__label">
+                        <span class="histogram__label-value histogram__label-value_font_blue">до <span class="histogram__label-value histogram__label-value_font_blue histogram__label-value_font-size_l">19%</span></span>
+                        <span class="histogram__label-period histogram__label-period_font_blue">годовых</span>
+                      </div>
+                      <div class="histogram__bar histogram__bar_size_l histogram__bar_bgr-color_blue"></div>
+                      <p class="histogram__legend histogram__legent_font_blue">Вклады НурФинанс</p>
+                    </li>
+
+                    <li class="histogram__section">
+                      <div class="histogram__label">
+                        <span class="histogram__label-value">до <span class="histogram__label-value histogram__label-value_font-size_l">9%</span></span>
+                        <span class="histogram__label-period">годовых</span>
+                      </div>
+                      <div class="histogram__bar histogram__bar_size_m"></div>
+                      <p class="histogram__legend">Вложения в недвижимость </p>
+                    </li>
+
+                  </ul>
+                </li>
+
+                <li class="opportunities__charts-item">
+                  <h3 class="opportunities__subtitle">Инвестируйте со стабильным результатом</h3>
+                  <div class="linear-graph">
+                    <img class="linear-graph__image" src="<%=require('../images/pics/linear-graph.svg')%>" alt="Фоновая картинка графика">
+                    <ul class="list linear-graph__legend">
+                      <li class="linear-graph__legend-item">
+                        <div class="linear-graph__legend-icon"></div>
+                        <span class="linear-graph__legend-text">Фондовый рынок</span>
+                      </li>
+                      <li class="linear-graph__legend-item">
+                        <div class="linear-graph__legend-icon linear-graph__legend-icon_color_blue"></div>
+                        <span class="linear-graph__legend-text">Вклады НурФинанс</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+              </ul>
+
+              <div class="opportunities__profit">
+                <h3 class="opportunities__subtitle">Возвращайте свои средства вовремя</h3>
+                <div class="opportunities__line"></div>
+                <ul class="list opportunities__profit-list">
+
+                  <li class="opportunities__profit-item">
+                    <h4 class="opportunities__profit-text">
+                      <span class="opportunities__profit-text opportunities__profit-text_style_bold">Недвижимость</span>
+                      низкая ликвидность
+                    </h4>
+                    <div class="opportunities__profit-icon">
+                      <p class="opportunities__profit-text opportunities__profit-text_style_grey">
+                        Срок возврата
+                        <span class="opportunities__profit-text opportunities__profit-text_style_bold">от 3 месяцев</span>
+                      </p>
+                    </div>
+                    <div class="opportunities__profit-progress-bar-bgr">
+                      <div class="opportunities__profit-progress-bar"></div>
+                    </div>
+                  </li>
+
+                  <li class="opportunities__profit-item">
+                    <h4 class="opportunities__profit-text">
+                      <span class="opportunities__profit-text opportunities__profit-text_style_bold">НурФинанс</span>
+                      высокая ликвидность
+                    </h4>
+                    <div class="opportunities__profit-icon opportunities__profit-icon_style_blue">
+                      <p class="opportunities__profit-text opportunities__profit-text_style_blue">
+                        Срок возврата
+                        <span class="opportunities__profit-text opportunities__profit-text_style_bold">от 3 дней</span>
+                      </p>
+                    </div>
+                    <div class="opportunities__profit-progress-bar-bgr opportunities__profit-progress-bar-bgr_style_blue">
+                      <div class="opportunities__profit-progress-bar opportunities__profit-progress-bar_style_blue"></div>
+                    </div>
+                  </li>
+
+                </ul>
+
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 
