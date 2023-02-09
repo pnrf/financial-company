@@ -204,6 +204,11 @@
   height: 68px;
 }
 
+.button_size_405x48 {
+  width: 405px;
+  height: 48px;
+}
+
 .button_size_252x48 {
   width: 252px;
   height: 48px;
@@ -673,9 +678,9 @@
   /* height: 100%; */
   display: flex;
   gap: 51px;
-  /* background: linear-gradient(90deg, rgba(198, 217, 233, 0) 0%, #C6D9E9 49.48%, rgba(198, 217, 233, 0) 100%);
-  background-size: 100% 1px;
-  background-repeat: repeat-y; */
+  background-image: url('../images/pics/graph-bgr-line.svg');
+  background-size: 100% 23px;
+  background-repeat: repeat-y;
 }
 
 .histogram__section {
@@ -765,6 +770,9 @@
 
 .linear-graph__image {
   width: 364px;
+  background-image: url('../images/pics/graph-bgr-line.svg');
+  background-size: 100% 23px;
+  background-repeat: no-repeat space;
 }
 
 .linear-graph__legend {
@@ -879,6 +887,53 @@
   background-color: #355DFB;
 }
 
+/* ---------- reviews ---------- */
+
+.reviews {
+  margin-top: 112px;
+  position: relative;
+}
+
+.reviews__slide-img {
+  position: relative;
+  width: 405px;
+  height: 220px;
+  border-radius: 70px 6px;
+}
+
+.reviews__slide-img::after {
+  content: '';
+  width: 113px;
+  height: 186px;
+  position: absolute;
+  top: 17px;
+  right: 26px;
+  z-index: 1000;
+  background-image: url('../images/icons/btn-play.svg');
+  background-repeat: no-repeat;
+  background-color: red;
+  /* background: top/ contain no-repeat url('../images/icons/btn-play.svg'); */
+}
+
+.reviews__slide-user-name {
+  margin: 0;
+  padding-top: 22px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: left;
+}
+
+.reviews__slide-product-name {
+  margin: 0;
+  padding-top: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #6E9BB8;
+  text-align: left;
+}
+
 /* ---------- section ---------- */
 
 .section {
@@ -895,11 +950,13 @@
 }
 
 .section__wrapper {
-  background: #F0F4F8;
-  border-radius: 64px 6px;
   margin: 0 auto;
+  padding-top: 59px;
+  padding-bottom: 17px;
   max-width: 1420px;
   width: 1368px;
+  background: #F0F4F8;
+  border-radius: 64px 6px;
 }
 
 .section__content {
@@ -936,10 +993,16 @@
 /* ---------- footer ---------- */
 
 .footer {
-  background: #f0f4f8;
+  margin: 100px auto 0;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  background: #f0f4f8;
+}
+
+.footer__container {
+  margin: 87px auto 90px;
+  max-width: 1245px;
 }
 

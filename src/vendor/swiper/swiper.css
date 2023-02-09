@@ -33,6 +33,23 @@
   background: #fff url('../../images/icons/arrow-left-slider-btn.svg') 50%/7.5px 15px no-repeat;
  }
 
+ .swiper__button-prev_section_reviews {
+  bottom: 78px;
+  left: -100px;
+  right: auto;
+  width: 80px;
+  height: 80px;
+  background-size: 15px 30px;
+ }
+
+ .swiper__button-next_section_reviews {
+  bottom: 78px;
+  right: -100px;
+  width: 80px;
+  height: 80px;
+  background-size: 15px 30px;
+ }
+
 /* .swiper .swiper-pagination_position {
   position: absolute;
   bottom: 153px;
@@ -54,6 +71,7 @@
 .swiper-slide {
   text-align: right;
   font-size: 18px;
+  /* position: relative; */
 
   /* Center slide text vertically */
   display: -webkit-box;

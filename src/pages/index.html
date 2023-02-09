@@ -75,29 +75,29 @@
       <!-- intro -->
       <section class="section intro">
         <div class="section__container intro__container">
-            <div class="section__content">
+          <div class="section__content">
+            <div class="swiper swiper_section_intro">
+              <div class="link swiper__button-prev swiper__button-prev_section_intro"></div>
+              <div class="link swiper__button-next swiper__button-next_section_intro"></div>
+              <div class="swiper-pagination swiper-pagination_section_intro swiper-pagination_position"></div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
 
-              <div class="swiper swiper_section_intro">
-                <div class="link swiper__button-prev swiper__button-prev_section_intro"></div>
-                <div class="link swiper__button-next swiper__button-next_section_intro"></div>
-                <div class="swiper-pagination swiper-pagination_section_intro swiper-pagination_position"></div>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <h1 class="intro__slide-title">Инвестируйте с повышенной доходностью до 19% годовых</h1>
-                    <p class="intro__slide-text">100% обеспеченность активами, прибыль каждые 3 месяца!</p>
-                    <img class="intro__slide-img" src="<%=require('../images/pics/bgr-man-01.png')%>" alt="Фоновая картинка мужчины, окрыленного условиями инвестирования">
-                    <div class="intro__buttons">
-                      <a class="button button_type_link button_size_xl button_style_blue" href="#" target="_blank" rel="noopener noreferrer">Инвестировать</a>
-                      <a class="button button_type_link button_size_s button_style_white" href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>
-                    </div>
+                  <h1 class="intro__slide-title">Инвестируйте с повышенной доходностью до 19% годовых</h1>
+                  <p class="intro__slide-text">100% обеспеченность активами, прибыль каждые 3 месяца!</p>
+                  <img class="intro__slide-img" src="<%=require('../images/pics/bgr-man-01.png')%>" alt="Фоновая картинка мужчины, окрыленного условиями инвестирования">
+                  <div class="intro__buttons">
+                    <a class="button button_type_link button_size_xl button_style_blue" href="#" target="_blank" rel="noopener noreferrer">Инвестировать</a>
+                    <a class="button button_type_link button_size_s button_style_white" href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>
                   </div>
-                  <div class="swiper-slide">
-                    <img class="intro__slide-img" src="<%=require('../images/pics/bgr-man-01.png')%>" alt="Фоновая картинка мужчины, окрыленного условиями инвестирования">
-                  </div>
+
+                </div>
+                <div class="swiper-slide">
+                  <img class="intro__slide-img" src="<%=require('../images/pics/bgr-man-01.png')%>" alt="Фоновая картинка мужчины, окрыленного условиями инвестирования">
                 </div>
               </div>
-
             </div>
+          </div>
         </div>
       </section>
 
@@ -406,20 +406,97 @@
         </div>
       </section>
 
-      <!-- section -->
-      <section class="section">
-        <div class="section__container">
+      <!-- reviews -->
+      <section class="section reviews">
+          <div class="section__content">
+            <h2 class="section__title">Отзывы клиентов</h2>
+          </div>
           <div class="section__wrapper">
             <div class="section__content">
-              <p class="section__subtitle intro__subtitle">jslfjslfjslf</p>
-              <p>jslfjslfjslf</p>
+              <div class="link swiper__button-prev swiper__button-prev_section_reviews"></div>
+              <div class="link swiper__button-next swiper__button-next_section_reviews"></div>
+
+              <div class="swiper swiper-section-reviews">
+                <!-- <div class="link swiper__button-prev swiper__button-prev_section_reviews"></div>
+                <div class="link swiper__button-next swiper__button-next_section_reviews"></div> -->
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-01.png')%>" alt="Заставка для видео с фотографией клиента">
+                    <p class="reviews__slide-user-name">Евгений Садков</p>
+                    <p class="reviews__slide-product-name">Программа  –  Экспресс Рассрочка</p>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-02.png')%>" alt="Заставка для видео с фотографией клиента">
+                    <p class="reviews__slide-user-name">Евгений Майер</p>
+                    <p class="reviews__slide-product-name">Инвестиции  –  Вклад Активный</p>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-03.png')%>" alt="Заставка для видео с фотографией клиента">
+                    <p class="reviews__slide-user-name">Фанзиль Гарипов</p>
+                    <p class="reviews__slide-product-name">Программа  –  Авто Рассрочка</p>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-02.png')%>" alt="Заставка для видео с фотографией клиента">
+                    <p class="reviews__slide-user-name">Евгений Майер</p>
+                    <p class="reviews__slide-product-name">Инвестиции  –  Вклад Активный</p>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-02.png')%>" alt="Заставка для видео с фотографией клиента">
+                    <p class="reviews__slide-user-name">Евгений Майер</p>
+                    <p class="reviews__slide-product-name">Инвестиции  –  Вклад Активный</p>
+                  </div>
+
+                </div>
+              </div>
             </div>
+            <a class="button button_type_link button_size_405x48 button_style_white" href="#" target="_blank">Смотреть больше отзывов</a>
           </div>
-        </div>
       </section>
     </main>
 
     <!-- footer -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container">
+
+        <div class="footer__wrapper">
+          <img class="logo footer__logo" src="<%=require('../images/logo.svg')%>" alt="Логотип финансовой компании">
+          <div class="footer__search"></div>
+        </div>
+
+        <div class="footer__contacts">
+          <p class="footer__phone">8 800 2700 700</p>
+          <p class="footer__email">support@nur.finance</p>
+          <p class="footer__address">Казань, ул. Мавлютова, дом 31</p>
+          <p class="footer__work-time">Мы работаем с 08:00 до 20:00</p>
+          <ul class="footer__socials"></ul>
+        </div>
+
+        <div class="footer__menu"></div>
+
+        <div class="footer__legal">
+          <div class="footer__disclaimer">
+            <p class="footer__disclaimer-title">Заголовок о доп моментах</p>
+            <p class="footer__disclaimer-text">Давно выяснено, что при оценке дизайна и&nbsp;композиции читаемый
+              текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее
+              стандартное заполнение шаблона, а&nbsp;также реальное распределение букв и&nbsp;пробелов в&nbsp;абзацах,
+              которое не&nbsp;получается при простой дубликации &laquo;Здесь ваш текст.. Здесь ваш текст.. Здесь ваш
+              текст..&raquo; Многие программы электронной вёрстки и&nbsp;редакторы HTML используют Lorem Ipsum
+              в&nbsp;качестве текста по&nbsp;умолчанию, так что поиск по&nbsp;ключевым словам &laquo;lorem ipsum&raquo;
+              сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.</p>
+          </div>
+          <div class="footer__info">
+            <p class="footer__copyright">&copy; 2021 АО «НурФинанс»</p>
+            <a href="" class="link footer__legal-docs">Политика конфиденциальности</a>
+          </div>
+        </div>
+
+      </div>
+
+    </footer>
   </div>
 </body>

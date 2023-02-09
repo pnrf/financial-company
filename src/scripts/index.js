@@ -39,3 +39,18 @@ const swiperSectionIntro = new Swiper(".swiper_section_intro", {
   //   }
   // }
 });
+
+const swiperSectionReviews = new Swiper(".swiper-section-reviews", {
+  modules: [Navigation],
+
+  slidesPerView: 3,
+	spaceBetween: 15,
+  slidesPerGroup: 2,
+  loop: true,
+  loopFillGroupWithBlank: true,
+
+  navigation: {
+    nextEl: '.swiper__button-next_section_reviews',
+    prevEl: '.swiper__button-prev_section_reviews',
+  },
+});
