@@ -35,6 +35,61 @@
   list-style: none;
 }
 
+/* ---------- section ---------- */
+
+.section {
+  position: relative;
+  width: 100%;
+}
+
+.section__container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1620px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section__wrapper {
+  margin: 0 auto;
+  padding-top: 59px;
+  padding-bottom: 17px;
+  max-width: 1420px;
+  width: 1368px;
+  background: #F0F4F8;
+  border-radius: 64px 6px;
+}
+
+.section__content {
+  margin: 0 auto;
+  max-width: 1245px;
+  position: relative;
+}
+
+.section__title {
+  margin: 0;
+  padding-bottom: 30px;
+  /* max-width: 446px; */
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 110%;
+}
+
+.section__subtitle {
+  margin: 24px 0 0;
+  max-width: 442px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.section__text {
+  margin: 24px 0 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
 /* ---------- header ---------- */
 
 .header {
@@ -212,6 +267,11 @@
 .button_size_252x48 {
   width: 252px;
   height: 48px;
+}
+
+.button_size_190x68 {
+  width: 190px;
+  height: 68px;
 }
 
 .button_size_166x48 {
@@ -466,10 +526,12 @@
   padding-bottom: 60px;
 }
 
-/* ---------- section ---------- */
+/* ---------- advantages ---------- */
 
 .advantages {
   margin-top: 118px;
+  margin-bottom: -66px;
+  z-index: 1000;
 }
 
 .advantages__content {
@@ -506,6 +568,131 @@
   overflow: hidden;
   text-overflow: ellipsis;
 
+}
+
+/* ---------- profit calculation ---------- */
+
+.profit-calc {
+  margin: 0 auto;
+}
+
+.profit-calc__wrapper {
+  padding-top: 169px;
+  padding-bottom: 110px;
+}
+
+.profit-calc__container {
+  display: flex;
+  gap: 41px;
+}
+
+.profit-calc__chart {
+  width: 385px;
+  height: 374px;
+  position: relative;
+  background: left bottom/ 290px 374px no-repeat url('../images/pics/chart-bgr.svg'),
+              left bottom/ 390px 374px no-repeat url('../images/pics/chart-lines.svg');
+
+}
+
+.profit-calc__chart-point-01 {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: -2px;
+  left: -1px;
+  background: center/ 10px 10px no-repeat url('../images/pics/chart-point.svg');
+}
+
+.profit-calc__chart-point-02 {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 10px;
+  left: 55px;
+  background: center/ 10px 10px no-repeat url('../images/pics/chart-point.svg');
+}
+
+.profit-calc__chart-point-03 {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 28px;
+  left: 112px;
+  background: center/ 10px 10px no-repeat url('../images/pics/chart-point.svg');
+}
+
+.profit-calc__chart-point-04 {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 54px;
+  left: 168px;
+  background: center/ 10px 10px no-repeat url('../images/pics/chart-point.svg');
+}
+
+.profit-calc__chart-point-05 {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 90px;
+  left: 225px;
+  background: center/ 10px 10px no-repeat url('../images/pics/chart-point.svg');
+}
+
+.profit-calc__chart-point-06 {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 142px;
+  left: 282px;
+  background: center/ 10px 10px no-repeat url('../images/pics/chart-point.svg');
+}
+
+
+.form {
+  display: flex;
+  width: 460px;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: 34px;
+}
+
+.form__label {}
+
+.form__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__data-label {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.form__data-measure {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.form__data-measure-index {
+  padding-left: 5px;
+}
+
+.form__input {
+  margin-top: 12px;
+  width: 460px;
+  height: 6px;
 }
 
 /* ---------- info ---------- */
@@ -657,6 +844,7 @@
   /* height: 100%; */
   display: flex;
   justify-content: space-between;
+  gap: 60px;
 }
 
 .opportunities__charts-item {
@@ -933,62 +1121,6 @@
   color: #6E9BB8;
   text-align: left;
 }
-
-/* ---------- section ---------- */
-
-.section {
-  position: relative;
-  width: 100%;
-}
-
-.section__container {
-  position: relative;
-  margin: 0 auto;
-  max-width: 1620px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.section__wrapper {
-  margin: 0 auto;
-  padding-top: 59px;
-  padding-bottom: 17px;
-  max-width: 1420px;
-  width: 1368px;
-  background: #F0F4F8;
-  border-radius: 64px 6px;
-}
-
-.section__content {
-  margin: 0 auto;
-  max-width: 1245px;
-  position: relative;
-}
-
-.section__title {
-  margin: 0;
-  padding-bottom: 30px;
-  /* max-width: 446px; */
-  font-weight: 300;
-  font-size: 34px;
-  line-height: 110%;
-}
-
-.section__subtitle {
-  margin: 24px 0 0;
-  max-width: 442px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-}
-
-.section__text {
-  margin: 24px 0 0;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-}
-
 
 /* ---------- footer ---------- */
 

@@ -54,7 +54,7 @@
             </div>
 
             <a class="button button_type_link button_size_l button_style_blue" role="button" href="#" target="_blank" rel="noopener noreferrer" aria-label="Личный кабинет" title="Перейти к авторизации в личный кабинет">Личный кабинет</a>
-            <button class="button button_size_l button_style_white" href="#" target="_blank" rel="noopener noreferrer">Онлайн-заявка</button>
+            <button class="button button_size_l button_style_white">Онлайн-заявка</button>
           </div>
         </div>
 
@@ -153,7 +153,7 @@
 
             <div class="card card_size_small">
               <div class="card__content">
-                <h3 class="card__subtitle">Финансирование</>
+                <h3 class="card__subtitle">Финансирование</h3>
                 <h4 class="card__title">Экспресс Рассрочка</h4>
                 <div class="card__stat-data card__stat-data_margin-bottom_s">
                   <p class="card__stat-data-value cart__stat-data-value_font-size_s">1 млн</p>
@@ -210,68 +210,75 @@
         </div>
       </section>
 
-      <!-- info -->
-      <section class="section info">
-        <div class="section__content">
-          <h2 class="section__title">Полезная информация</h2>
-          <ul class="info__cards">
+      <!-- profit calculation -->
+      <section class="section profit-calc">
+        <div class="section__wrapper profit-calc__wrapper">
+          <div class="section__content">
+            <h2 class="section__title">Рассчитай свои <br> накопления и доход</h2>
+            <div class="profit-calc__container">
 
-            <li class="info__card">
-              <img class="info__icon" src="<%=require('../images/icons/question.svg')%>" alt="Фоновая иконка для раздела Полезная информация">
-              <h3 class="info__subtitle">Ответы</>
-              <h4 class="info__title">Часто задаваемые <br> вопросы</h4>
-              <ul class="info__list">
-                <li class="info__list-item">
-                  <p class="info__text">Что такое инвестиции?</p>
-                  <p class="info__text">Зачем нужно инвестировать?</p>
-                </li>
-                <li class="info__list-item">
-                  <p class="info__text">Какие стратегии инвестирования существуют и какую лучше выбрать?</p>
-                </li>
-                <li class="info__list-item">
-                  <p class="info__text">Как защищены мои инвестиции?</p>
-                  <p class="info__text">Что будет, если компания обанкротится?</p>
-                </li>
-              </ul>
-            </li>
+              <form class="form">
+                <fieldset class="form__fieldset">
+                  <label class="form__label">
+                    <div class="form__data">
+                      <span class="form__data-key">Сумма вклада</span>
+                      <span class="form__data-measure">
+                        <span class="form__data-measure-value">1 000 000</span>
+                        <span class="form__data-measure-index">&#8381;</span>
+                      </span>
+                    </div>
+                    <input class="form__input" type="range" id="depositAmount" name="depositAmount" min="30000" max="3000000" value="1000000" step="30000">
+                  </label>
 
-            <li class="info__card">
-              <img class="info__icon" src="<%=require('../images/icons/circle-half.svg')%>" alt="Фоновая иконка для раздела Полезная информация">
-              <h3 class="info__subtitle">Халяль</>
-              <h4 class="info__title">Отличие исламских инвестиций от неисламских</h4>
-              <ul class="info__list">
-                <li class="info__list-item">
-                  <p class="info__text">Термин «Риба» - что такое ростовщические операциии?</p>
-                </li>
-                <li class="info__list-item">
-                  <p class="info__text">Как проверяют компании на соответствие нормам халяль?</p>
-                </li>
-                <li class="info__list-item">
-                  <p class="info__text">Термин «Сукук» - эквивалент исламских облигаций</p>
-                </li>
-              </ul>
-            </li>
+                  <label class="form__label">
+                    <div class="form__data">
+                      <span class="form__data-key">Срок инвестирования</span>
+                      <span class="form__data-measure">
+                        <span class="form__data-measure-value">24</span>
+                        <span class="form__data-measure-index">месяца</span>
+                      </span>
+                    </div>
+                    <input class="form__input" type="range" id="depositAmount" name="depositAmount" min="6" max="36" value="24" step="1">
+                  </label>
 
-            <li class="info__card">
-              <img class="info__icon" src="<%=require('../images/icons/graduation-cap.svg')%>" alt="Фоновая иконка для раздела Полезная информация">
-              <h3 class="info__subtitle">Полезное</>
-              <h4 class="info__title">Школа <br> инвестора</h4>
-              <ul class="info__list">
-                <li class="info__list-item">
-                  <p class="info__text">7 финансовых советов на 2021 год.</p>
-                  <p class="info__text">Что делать, чтобы накопить на цель?</p>
-                </li>
-                <li class="info__list-item">
-                  <p class="info__text">Какие книги надо прочитать инвестору-новичку: топ-5 книг</p>
-                </li>
-                <li class="info__list-item">
-                  <p class="info__text">Сколько нужно денег,</p>
-                  <p class="info__text">чтобы начать инвестировать</p>
-                </li>
-              </ul>
-            </li>
+                  <label class="form__label">
+                    <div class="form__data">
+                      <span class="form__data-label">Пополнение вклада</span>
+                      <span class="form__data-measure">
+                        <span class="form__data-measure-value">30 000</span>
+                        <span class="form__data-measure-index">&#8381; / в месяц</span>
+                      </span>
+                    </div>
+                    <input class="form__input" type="range" id="depositAmount" name="depositAmount" min="10000" max="150000" value="30000" step="10000">
+                  </label>
 
-          </ul>
+                </fieldset>
+              </form>
+
+              <div class="profit-calc__chart">
+                <div class="profit-calc__chart-point-01"></div>
+                <div class="profit-calc__chart-point-02"></div>
+                <div class="profit-calc__chart-point-03"></div>
+                <div class="profit-calc__chart-point-04"></div>
+                <div class="profit-calc__chart-point-05"></div>
+                <div class="profit-calc__chart-point-06"></div>
+              </div>
+
+              <div class="profit-calc__results">
+                <ul class="list profit-calc__results-list">
+                  <li class="profit-calc__results-item">
+                    <span class="profit-calc__results-measure">
+                      <span class="profit-calc__results-value">12</span>
+                      <span class="profit-calc__results-index">%</span>
+                    </span>
+                    <span class="profit-calc__results-label">Доходность</span>
+                  </li>
+                </ul>
+                <button class="button button_size_190x68 button_style_blue" type="button">Онлайн-заявка</button>
+              </div>
+
+            </div>
+          </div>
         </div>
       </section>
 
@@ -456,6 +463,71 @@
             </div>
             <a class="button button_type_link button_size_405x48 button_style_white" href="#" target="_blank">Смотреть больше отзывов</a>
           </div>
+      </section>
+
+      <!-- info -->
+      <section class="section info">
+        <div class="section__content">
+          <h2 class="section__title">Полезная информация</h2>
+          <ul class="info__cards">
+
+            <li class="info__card">
+              <img class="info__icon" src="<%=require('../images/icons/question.svg')%>" alt="Фоновая иконка для раздела Полезная информация">
+              <h3 class="info__subtitle">Ответы</h3>
+              <h4 class="info__title">Часто задаваемые <br> вопросы</h4>
+              <ul class="info__list">
+                <li class="info__list-item">
+                  <p class="info__text">Что такое инвестиции?</p>
+                  <p class="info__text">Зачем нужно инвестировать?</p>
+                </li>
+                <li class="info__list-item">
+                  <p class="info__text">Какие стратегии инвестирования существуют и какую лучше выбрать?</p>
+                </li>
+                <li class="info__list-item">
+                  <p class="info__text">Как защищены мои инвестиции?</p>
+                  <p class="info__text">Что будет, если компания обанкротится?</p>
+                </li>
+              </ul>
+            </li>
+
+            <li class="info__card">
+              <img class="info__icon" src="<%=require('../images/icons/circle-half.svg')%>" alt="Фоновая иконка для раздела Полезная информация">
+              <h3 class="info__subtitle">Халяль</h3>
+              <h4 class="info__title">Отличие исламских инвестиций от неисламских</h4>
+              <ul class="info__list">
+                <li class="info__list-item">
+                  <p class="info__text">Термин «Риба» - что такое ростовщические операциии?</p>
+                </li>
+                <li class="info__list-item">
+                  <p class="info__text">Как проверяют компании на соответствие нормам халяль?</p>
+                </li>
+                <li class="info__list-item">
+                  <p class="info__text">Термин «Сукук» - эквивалент исламских облигаций</p>
+                </li>
+              </ul>
+            </li>
+
+            <li class="info__card">
+              <img class="info__icon" src="<%=require('../images/icons/graduation-cap.svg')%>" alt="Фоновая иконка для раздела Полезная информация">
+              <h3 class="info__subtitle">Полезное</h3>
+              <h4 class="info__title">Школа <br> инвестора</h4>
+              <ul class="info__list">
+                <li class="info__list-item">
+                  <p class="info__text">7 финансовых советов на 2021 год.</p>
+                  <p class="info__text">Что делать, чтобы накопить на цель?</p>
+                </li>
+                <li class="info__list-item">
+                  <p class="info__text">Какие книги надо прочитать инвестору-новичку: топ-5 книг</p>
+                </li>
+                <li class="info__list-item">
+                  <p class="info__text">Сколько нужно денег,</p>
+                  <p class="info__text">чтобы начать инвестировать</p>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div>
       </section>
     </main>
 
