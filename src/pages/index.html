@@ -246,7 +246,7 @@
                       <span class="form__data-label">Пополнение вклада</span>
                       <span class="form__data-measure">
                         <span class="form__data-measure-value">30 000</span>
-                        <span class="form__data-measure-index">&#8381; / в месяц</span>
+                        <span class="form__data-measure-index">₽₽₽₽ &#8381; / в месяц</span>
                       </span>
                     </div>
                     <input class="form__input" type="range" id="depositAmount" name="depositAmount" min="10000" max="150000" value="30000" step="10000">
@@ -424,8 +424,6 @@
               <div class="link swiper__button-next swiper__button-next_section_reviews"></div>
 
               <div class="swiper swiper-section-reviews">
-                <!-- <div class="link swiper__button-prev swiper__button-prev_section_reviews"></div>
-                <div class="link swiper__button-next swiper__button-next_section_reviews"></div> -->
                 <div class="swiper-wrapper">
 
                   <div class="swiper-slide">
@@ -446,17 +444,17 @@
                     <p class="reviews__slide-product-name">Программа  –  Авто Рассрочка</p>
                   </div>
 
-                  <div class="swiper-slide">
+                  <!-- <div class="swiper-slide">
                     <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-02.png')%>" alt="Заставка для видео с фотографией клиента">
                     <p class="reviews__slide-user-name">Евгений Майер</p>
-                    <p class="reviews__slide-product-name">Инвестиции  –  Вклад Активный</p>
+                    <p class="reviews__slide-product-name">1</p>
                   </div>
 
                   <div class="swiper-slide">
                     <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-02.png')%>" alt="Заставка для видео с фотографией клиента">
                     <p class="reviews__slide-user-name">Евгений Майер</p>
-                    <p class="reviews__slide-product-name">Инвестиции  –  Вклад Активный</p>
-                  </div>
+                    <p class="reviews__slide-product-name">2</p>
+                  </div> -->
 
                 </div>
               </div>
@@ -537,18 +535,72 @@
 
         <div class="footer__wrapper">
           <img class="logo footer__logo" src="<%=require('../images/logo.svg')%>" alt="Логотип финансовой компании">
-          <div class="footer__search"></div>
+          <div class="footer__search">
+            <button class="button footer__search-button"></button>
+            <input class="footer__search-input" type="text" placeholder="Поиск по услугам">
+          </div>
         </div>
 
-        <div class="footer__contacts">
-          <p class="footer__phone">8 800 2700 700</p>
-          <p class="footer__email">support@nur.finance</p>
-          <p class="footer__address">Казань, ул. Мавлютова, дом 31</p>
-          <p class="footer__work-time">Мы работаем с 08:00 до 20:00</p>
-          <ul class="footer__socials"></ul>
-        </div>
+        <div class="footer__wrapper">
 
-        <div class="footer__menu"></div>
+          <div class="footer__contacts">
+            <p class="footer__phone">8 800 2700 700</p>
+            <p class="footer__email">support@nur.finance</p>
+            <p class="footer__address">Казань, ул. Мавлютова, дом 31</p>
+            <p class="footer__work-time">Мы работаем с 08:00 до 20:00</p>
+            <ul class="list footer__socials">
+              <li class="footer__socials-item">
+                <img class="footer__socials-logo" src="<%=require('../images/icons/icon-logo-whatsapp.svg')%>" alt="Иконка мессенджера WhatsApp">
+              </li>
+              <li class="footer__socials-item">
+                <img class="footer__socials-logo" src="<%=require('../images/icons/icon-logo-telegram.svg')%>" alt="Иконка мессенджера Telegram">
+              </li>
+              <li class="footer__socials-item">
+                <img class="footer__socials-logo" src="<%=require('../images/icons/icon-logo-youtube.svg')%>" alt="Иконка видеосервиса Youtube">
+              </li>
+            </ul>
+          </div>
+
+          <nav class="footer__menu">
+            <ul class="list footer__menu-list">
+              <li class="footer__menu-list-item">
+                <a href="#" class="link footer__menu-list-title">Инвестиции</a>
+                <a href="#" class="link footer__menu-list-subtitle">Вклад Накопительный</a>
+                <a href="#" class="link footer__menu-list-subtitle">Вклад Активный</a>
+                <a href="#" class="link footer__menu-list-subtitle">Вклад Комфорт</a>
+                <a href="#" class="link footer__menu-list-subtitle">Калькулятор</a>
+                <a href="#" class="link footer__menu-list-subtitle">Отзывы по инвестициям</a>
+              </li>
+
+              <li class="footer__menu-list-item">
+                <a href="#" class="link footer__menu-list-title">Рассрочка</a>
+                <a href="#" class="link footer__menu-list-subtitle">АвтоРассрочка</a>
+                <a href="#" class="link footer__menu-list-subtitle">Долевое финансирование</a>
+                <a href="#" class="link footer__menu-list-subtitle">Долговое финансирование</a>
+                <a href="#" class="link footer__menu-list-subtitle">Калькулятор</a>
+                <a href="#" class="link footer__menu-list-subtitle">Отзывы по займам</a>
+              </li>
+
+              <li class="footer__menu-list-item">
+                <a href="#" class="link footer__menu-list-title">Компания</a>
+                <a href="#" class="link footer__menu-list-subtitle">О компании</a>
+                <a href="#" class="link footer__menu-list-subtitle">Новости</a>
+                <a href="#" class="link footer__menu-list-subtitle">Отчетность</a>
+                <a href="#" class="link footer__menu-list-subtitle">Сотрудничество</a>
+                <a href="#" class="link footer__menu-list-subtitle">Реквизиты</a>
+              </li>
+
+              <li class="footer__menu-list-item">
+                <a href="#" class="link footer__menu-list-title">Информация</a>
+                <a href="#" class="link footer__menu-list-subtitle">Халяль подробно</a>
+                <a href="#" class="link footer__menu-list-subtitle">Наши партнеры</a>
+                <a href="#" class="link footer__menu-list-subtitle">Частые вопросы</a>
+                <a href="#" class="link footer__menu-list-subtitle">Личный кабинет</a>
+                <a href="#" class="link footer__menu-list-subtitle">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
         <div class="footer__legal">
           <div class="footer__disclaimer">
@@ -563,7 +615,7 @@
           </div>
           <div class="footer__info">
             <p class="footer__copyright">&copy; 2021 АО «НурФинанс»</p>
-            <a href="" class="link footer__legal-docs">Политика конфиденциальности</a>
+            <a href="#" class="link footer__legal-docs">Политика конфиденциальности</a>
           </div>
         </div>
 

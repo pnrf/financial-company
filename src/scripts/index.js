@@ -45,12 +45,12 @@ const swiperSectionReviews = new Swiper(".swiper-section-reviews", {
 
   slidesPerView: 3,
 	spaceBetween: 15,
-  slidesPerGroup: 2,
+  slidesPerGroup: 3,
   loop: true,
-  loopFillGroupWithBlank: true,
+  // loopFillGroupWithBlank: true,
 
   navigation: {
-    nextEl: '.swiper__button-next_section_reviews',
     prevEl: '.swiper__button-prev_section_reviews',
+    nextEl: '.swiper__button-next_section_reviews',
   },
 });

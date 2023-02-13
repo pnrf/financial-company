@@ -25,3 +25,10 @@
   font-weight: 700;
   src: url("./Ubuntu/Ubuntu-Bold.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: 'Rubik';
+  font-style:  normal;
+  font-weight: 600;
+  src: url("./Rubik/Rubik-Medium.ttf") format("truetype");
+}

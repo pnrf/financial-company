@@ -1138,3 +1138,178 @@
   max-width: 1245px;
 }
 
+.footer__wrapper {
+  margin-bottom: 73px;
+  display: flex;
+  align-items: center;
+  gap: 84px;
+}
+
+.footer__logo {
+  margin-right: 104px;
+  width: 156px;
+  height: 32px;
+}
+
+.footer__search {
+  padding-left: 11px;
+  width: 891px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.footer__search-button {
+  width: 28px;
+  height: 28px;
+  background: center/ 28px 28px no-repeat url('../images/icons/loupe-black.svg');
+}
+
+.footer__search-input {
+  margin: 10px 24px;
+  padding: 0;
+  width: 100%;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110%;
+  color: #79A6C3;
+}
+
+.footer__contacts {}
+
+.footer__phone {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 110%;
+  color: #0000DE;
+}
+
+.footer__email {
+  margin: 8px 0 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #6E9BB8;
+}
+
+.footer__address {
+  margin: 45px 0 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 110%;
+  color: #0000DE;
+}
+
+.footer__work-time {
+  margin: 7px 0 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #6E9BB8;
+}
+
+.footer__socials {
+  margin-top: 46px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer__socials-item {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.footer__socials-logo {
+  object-fit: contain;
+}
+
+.footer__menu {}
+
+.footer__menu-list {
+  display: flex;
+  gap: 60px;
+}
+
+.footer__menu-list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__menu-list-title {
+  margin: 0 0 14px 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 110%;
+  color: #0000DE;
+}
+
+.footer__menu-list-subtitle {
+  margin: 20px 0 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110%;
+}
+
+.footer__legal {}
+
+.footer__disclaimer {
+  margin-top: 69px;
+}
+
+.footer__disclaimer-title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 110%;
+  color: #6E9BB8;
+}
+
+.footer__disclaimer-text {
+  margin: 11px 0 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #6E9BB8;
+}
+
+.footer__info {
+  margin-top: 60px;
+  display: flex;
+  gap: 30px;
+}
+
+.footer__copyright {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #6E9BB8;
+}
+
+.footer__legal-docs {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #6E9BB8;
+}
