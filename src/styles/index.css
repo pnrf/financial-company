@@ -653,6 +653,7 @@
 .form {
   display: flex;
   width: 460px;
+  align-items: flex-end;
 }
 
 .form__fieldset {
@@ -693,6 +694,53 @@
   margin-top: 12px;
   width: 460px;
   height: 6px;
+}
+
+.profit-calc__results {
+  padding-left: 34px;
+  display: flex;
+  flex-direction: column;
+  width: 309px;
+  height: 374px;
+  background-color: #fff;
+  border-radius: 10px 10px 120px 10px;
+}
+
+.profit-calc__results-list {
+  margin: 27px 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.profit-calc__results-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.profit-calc__results-measure {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 110%;
+  color: #355DFB;
+}
+
+.profit-calc__results-value {
+  margin: 0;
+  padding: 0;
+}
+
+.profit-calc__results-index {
+  margin: 0;
+  padding: 0;
+}
+
+.profit-calc__results-label {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110%;
 }
 
 /* ---------- info ---------- */
@@ -1080,6 +1128,13 @@
 .reviews {
   margin-top: 112px;
   position: relative;
+}
+
+.reviews__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 41px;
 }
 
 .reviews__slide-img {
