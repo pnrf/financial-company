@@ -238,7 +238,17 @@
                         <span class="form__data-measure-index">месяца</span>
                       </span>
                     </div>
-                    <input class="form__input" type="range" id="depositAmount" name="depositAmount" min="6" max="36" value="24" step="1">
+                    <input class="form__input" type="range" id="investmentPeriod" name="investmentPeriod" min="6" max="36" value="24" step="1">
+                  </label>
+
+                  <label class="form__label">
+                    <div class="form__data form__data_type_flex-column">
+                      <span class="form__data-key">Порядок выплаты дохода</span>
+                      <div class="form__filter">
+                        <button class="button button_size_224x49 button_style_white" type="button">Ежемесячно</button>
+                        <button class="button button_size_224x49 button_style_line" type="button">В конце срока</button>
+                      </div>
+                      </div>
                   </label>
 
                   <label class="form__label">
@@ -249,7 +259,7 @@
                         <span class="form__data-measure-index">&#8381; / в месяц</span>
                       </span>
                     </div>
-                    <input class="form__input" type="range" id="depositAmount" name="depositAmount" min="10000" max="150000" value="30000" step="10000">
+                    <input class="form__input" type="range" id="addedSum" name="addedSum" min="10000" max="150000" value="30000" step="10000">
                   </label>
 
                 </fieldset>
@@ -446,18 +456,21 @@
 
                   <div class="swiper-slide">
                     <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-01.png')%>" alt="Заставка для видео с фотографией клиента">
+                    <div class="reviews__slide-play-btn"></div>
                     <p class="reviews__slide-user-name">Евгений Садков</p>
                     <p class="reviews__slide-product-name">Программа  –  Экспресс Рассрочка</p>
                   </div>
 
                   <div class="swiper-slide">
                     <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-02.png')%>" alt="Заставка для видео с фотографией клиента">
+                    <div class="reviews__slide-play-btn"></div>
                     <p class="reviews__slide-user-name">Евгений Майер</p>
                     <p class="reviews__slide-product-name">Инвестиции  –  Вклад Активный</p>
                   </div>
 
                   <div class="swiper-slide">
                     <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-03.png')%>" alt="Заставка для видео с фотографией клиента">
+                    <div class="reviews__slide-play-btn"></div>
                     <p class="reviews__slide-user-name">Фанзиль Гарипов</p>
                     <p class="reviews__slide-product-name">Программа  –  Авто Рассрочка</p>
                   </div>

@@ -269,6 +269,11 @@
   height: 48px;
 }
 
+.button_size_224x49 {
+  width: 224px;
+  height: 49px;
+}
+
 .button_size_190x68 {
   width: 190px;
   height: 68px;
@@ -314,6 +319,18 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 110%;
+  border-radius: 20px 0px;
+}
+
+.button_style_line {
+  padding: 14px;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #6E9BB8;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  border: 1px solid #C6D9E9;
   border-radius: 20px 0px;
 }
 
@@ -583,6 +600,7 @@
 
 .profit-calc__container {
   display: flex;
+  align-items: flex-end;
   gap: 41px;
 }
 
@@ -673,6 +691,12 @@
   align-items: center;
 }
 
+.form__data_type_flex-column {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
 .form__data-label {
   font-weight: 300;
   font-size: 16px;
@@ -694,6 +718,11 @@
   margin-top: 12px;
   width: 460px;
   height: 6px;
+}
+
+.form__filter {
+  display: flex;
+  gap: 12px;
 }
 
 .profit-calc__results {
@@ -1144,18 +1173,16 @@
   border-radius: 70px 6px;
 }
 
-.reviews__slide-img::after {
-  content: '';
+.reviews__slide-play-btn {
   width: 113px;
   height: 186px;
   position: absolute;
   top: 17px;
   right: 26px;
   z-index: 1000;
-  background-image: url('../images/icons/btn-play.svg');
+  background-image: url('../images/icons/Frame-3.svg');
   background-repeat: no-repeat;
-  background-color: red;
-  /* background: top/ contain no-repeat url('../images/icons/btn-play.svg'); */
+  background-size: cover;
 }
 
 .reviews__slide-user-name {
