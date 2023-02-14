@@ -1,0 +1,43 @@
+:root {
+
+/* BORDER RADIUS SCEME */
+  --border-radius-20: 20px;
+  --border-radius-10: 10px;
+  --border-radius-6: 6px;
+
+/* BUTTONS */
+  --padding-button: 19px 36px;
+  --border-width-button: 2px;
+
+/* FONT H1 */
+  --font-weight-h1: 700px;
+  --font-size-h1: 49px;
+  --line-height-h1: 110%;
+
+/* FONT COLORS */
+  --font-color-white: #fff;
+  --font-color-black: #000;
+  --font-color-blue: #0000DE;
+  --font-color-blue-light: #6E9BB8;
+  --font-color-blue-light-semi: #8FB1C7;
+  --font-color-blue-01: #79a6c3;
+  --font-color-blue-02: #355DFB;
+  --font-color-grey-light: #7C83A1;
+
+/* BACKGROUND COLORS */
+  --bgr-color-white: #fff;
+  --bgr-color-grey-light: #F0F4F8;
+  --bgr-color-black: #000;
+  --bgr-color-blue: #0000DE;
+  --bgr-color-01: #C9CEE1;
+  --bgr-color-02: #355DFB;
+  --bgr-color-03: #7C83A1;
+  --bgr-color-04: #C6D9E9;
+  --bgr-color-05: #EAF0F7;
+  --bgr-color-06: #9AA3C8;
+
+/* BORDER COLORS */
+--border-color-grey-light: #CBD8E9;
+--border-color-grey-light-semi: #C6D9E9;
+--border-color-grey-blue-semi: #8FB1C7;
+}
