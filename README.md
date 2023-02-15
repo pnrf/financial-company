@@ -32,6 +32,11 @@
 * git/github;
 * swiper
 
+### Спека сервисов:
+
+| Оптимизация картинок | [SVGOMG](https://jakearchibald.github.io/svgomg/), [Tinypng](https://tinypng.com/) |
+| Названия для цвета | [Color-name](https://www.color-name.com/), [Name that color](https://chir.ag/projects/name-that-color/#6195ED) |
+
 ### Сроки исполнения:
 
 - 03.02.2023 г. -- приступил к работе над проектом;

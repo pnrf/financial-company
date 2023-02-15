@@ -1,43 +1,76 @@
 :root {
+/* @media */
+--desktop: (min-width: 1920px);
+--laptop-l: (min-width: 1440px);
+--laptop: (min-width: 1024px);
+--tablet: (min-width: 768px);
+--mobile-l: (min-width: 425px);
+--mobile-m: (min-width: 390px);
+/* --mobile-s: (min-width: 320px); */
 
-/* BORDER RADIUS SCEME */
-  --border-radius-20: 20px;
-  --border-radius-10: 10px;
-  --border-radius-6: 6px;
+/* COLORS */
+--color-white: #fff;
+--color-white-anti-flash: #F0F4F8;
+--color-black: #000;
+--color-blue-air-superiority: #6E9BB8;
+--color-blue-ceil: #8FB1C7;
+--color-blue-columbia: #C6D9E9;
+--color-blue-light-periwinkle: #C9CEE1;
+--color-blue-medium: #0000DE;
+--color-blue-moonstone: #79a6c3;
+--color-blue-shadow: #7C83A1;
+--color-blue-ultramarine: #355DFB;
+--color-gray-bright: #EAF0F7;
+--color-gray-ceil: #9AA3C8;
+
+/* BORDER RADIUS */
+--border-radius-120: 120px;
+--border-radius-70: 70px;
+--border-radius-64: 64px;
+--border-radius-50: 50px;
+--border-radius-14: 14px;
+--border-radius-10: 10px;
+--border-radius-6: 6px;
+--border-radius-2: 2px;
+--border-radius-0: 0;
 
 /* BUTTONS */
-  --padding-button: 19px 36px;
-  --border-width-button: 2px;
+--padding-button: 19px 36px;
+--border-width-button: 2px;
 
-/* FONT H1 */
-  --font-weight-h1: 700px;
-  --font-size-h1: 49px;
-  --line-height-h1: 110%;
+/* FONT WEIGHT */
+--font-weight-bold: 700px;
+--font-weight-semi-bold: 600px;
+--font-weight-medium: 500px;
+--font-weight-regular: 400px;
+--font-weight-light: 300px;
 
-/* FONT COLORS */
-  --font-color-white: #fff;
-  --font-color-black: #000;
-  --font-color-blue: #0000DE;
-  --font-color-blue-light: #6E9BB8;
-  --font-color-blue-light-semi: #8FB1C7;
-  --font-color-blue-01: #79a6c3;
-  --font-color-blue-02: #355DFB;
-  --font-color-grey-light: #7C83A1;
+/* FONT SIZE */
+--font-size-49: 49px;
+--font-size-44: 44px;
+--font-size-37: 37px;
+--font-size-36: 36px;
+--font-size-34: 34px;
+--font-size-32: 32px;
+--font-size-30: 30px;
+--font-size-27: 27px;
+--font-size-24: 24px;
+--font-size-22: 22px;
+--font-size-20: 20px;
+--font-size-18: 18px;
+--font-size-16: 16px;
+--font-size-14: 14px;
+--font-size-12: 12px;
+--font-size-10: 10px;
 
-/* BACKGROUND COLORS */
-  --bgr-color-white: #fff;
-  --bgr-color-grey-light: #F0F4F8;
-  --bgr-color-black: #000;
-  --bgr-color-blue: #0000DE;
-  --bgr-color-01: #C9CEE1;
-  --bgr-color-02: #355DFB;
-  --bgr-color-03: #7C83A1;
-  --bgr-color-04: #C6D9E9;
-  --bgr-color-05: #EAF0F7;
-  --bgr-color-06: #9AA3C8;
+/* LINE HEIGT */
+--line-height-140: 140%;
+--line-height-130: 130%;
+--line-height-120: 120%;
+--line-height-110: 110%;
+--line-height-100: 100%;
 
-/* BORDER COLORS */
---border-color-grey-light: #CBD8E9;
---border-color-grey-light-semi: #C6D9E9;
---border-color-grey-blue-semi: #8FB1C7;
+/* TRANSITION */
+--transition-link-hover: all 200ms ease;
+--transition-btn-hover: all 200ms ease;
 }
