@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="инвестиции, финансирование, вклады, будущее, бизнес, физлица, Москва, Казань">
+  <meta name="keywords" content="инвестиции, финансирование, вклады, будущее, бизнес, физлица, Москва">
   <meta name="robots" content="noindex, nofollow">
-  <title>ИФК НурФинанс</title>
-  <meta name="description" content="НурФинанс: российская инвестиционно-финансовая компания,
-  работающая по принципам исламского (партнёрского) финансирования и инвестирования.">
+  <title>Финансовая компания</title>
+  <meta name="description" content="Российская инвестиционно-финансовая компания">
 </head>
 
 <body class="root">
@@ -25,7 +24,7 @@
         <div class="header__menu">
           <h2 class="header__title">Инвестиционно-финансовая компания</h2>
           <ul class="list nav header__nav">
-            <li class="nav__item"><a class="link header__location" role="button" href="#" aria-label="Текущий регион" title="Выбрать регион из списка">Город Казань</a></li>
+            <li class="nav__item"><a class="link header__location" role="button" href="#" aria-label="Текущий регион" title="Выбрать регион из списка">город Москва</a></li>
             <li class="nav__item"><a class="link nav__link" href="#">О компании</a></li>
             <li class="nav__item"><a class="link nav__link" href="#">Отзывы</a></li>
             <li class="nav__item"><a class="link nav__link" href="#">Халяль подробно</a></li>
@@ -38,7 +37,7 @@
         </div>
         <div class="header__content">
           <a class="link" href="#">
-            <img class="logo header__logo" src="<%=require('../images/logo.svg')%>" alt="Логотип финансовой компании">
+            <img class="logo header__logo" src="<%=require('../images/logo.png')%>" alt="Логотип финансовой компании">
           </a>
           <ul class="list nav header__nav">
             <li class="nav__item"><a class="link nav__link" href="#">Инвестиции</a></li>
@@ -47,7 +46,7 @@
           </ul>
 
           <div class="header__wrapper">
-            <a class="link phone header__phone" href="tel:+88002700700-">8 800 2700 700</a>
+            <a class="link phone header__phone" href="tel:+88002700700-">8 800 000 000</a>
             <div class="header__search">
               <a class="header__search-btn" aria-label="Поиск по сайту" href="#"></a>
               <div class="header__search-overlay"></div>
@@ -223,18 +222,18 @@
                     <div class="form__data">
                       <span class="form__data-key">Сумма вклада</span>
                       <span class="form__data-measure">
-                        <span class="form__data-measure-value">1 000 000</span>
+                        <span class="form__data-measure-value" id="depositAmountText"></span>
                         <span class="form__data-measure-index">&#8381;</span>
                       </span>
                     </div>
-                    <input class="form__input" type="range" id="depositAmount" name="depositAmount" min="30000" max="3000000" value="1000000" step="30000">
+                    <input class="form__input" type="range" id="depositAmount" name="depositAmount" min="500000" max="3000000" value="1000000" step="500000">
                   </label>
 
                   <label class="form__label">
                     <div class="form__data">
                       <span class="form__data-key">Срок инвестирования</span>
                       <span class="form__data-measure">
-                        <span class="form__data-measure-value">24</span>
+                        <span class="form__data-measure-value" id="investmentPeriodText"></span>
                         <span class="form__data-measure-index">месяца</span>
                       </span>
                     </div>
@@ -255,7 +254,7 @@
                     <div class="form__data">
                       <span class="form__data-label">Пополнение вклада</span>
                       <span class="form__data-measure">
-                        <span class="form__data-measure-value">30 000</span>
+                        <span class="form__data-measure-value" id="addedSumText"></span>
                         <span class="form__data-measure-index">&#8381; / в месяц</span>
                       </span>
                     </div>
@@ -279,7 +278,7 @@
 
                   <li class="profit-calc__results-item">
                     <span class="profit-calc__results-measure">
-                      <span class="profit-calc__results-value">12</span>
+                      <span class="profit-calc__results-value" id="interestRateId"></span>
                       <span class="profit-calc__results-index">%</span>
                     </span>
                     <span class="profit-calc__results-label">Доходность</span>
@@ -287,7 +286,7 @@
 
                   <li class="profit-calc__results-item">
                     <span class="profit-calc__results-measure">
-                      <span class="profit-calc__results-value">282 366</span>
+                      <span class="profit-calc__results-value" id="profitAmountId"></span>
                       <span class="profit-calc__results-index">&#8381;</span>
                     </span>
                     <span class="profit-calc__results-label">Сумма доходности</span>
@@ -295,7 +294,7 @@
 
                   <li class="profit-calc__results-item">
                     <span class="profit-calc__results-measure">
-                      <span class="profit-calc__results-value">1 282 366</span>
+                      <span class="profit-calc__results-value" id="profitAmountTotalId"></span>
                       <span class="profit-calc__results-index">&#8381;</span>
                     </span>
                     <span class="profit-calc__results-label">Итоговая сумма</span>
@@ -313,7 +312,7 @@
       <!-- opportunities -->
       <section class="section opportunities">
         <div class="section__content">
-          <h2 class="section__title">Ваши возможности с НурФинанс</h2>
+          <h2 class="section__title">Ваши возможности</h2>
           <div class="opportunities__container">
 
             <div class="opportunities__theses">
@@ -361,7 +360,7 @@
                         <span class="histogram__label-period histogram__label-period_font_blue">годовых</span>
                       </div>
                       <div class="histogram__bar histogram__bar_size_l histogram__bar_bgr-color_blue"></div>
-                      <p class="histogram__legend histogram__legent_font_blue">Вклады НурФинанс</p>
+                      <p class="histogram__legend histogram__legent_font_blue">Вклады с нами</p>
                     </li>
 
                     <li class="histogram__section">
@@ -387,7 +386,7 @@
                       </li>
                       <li class="linear-graph__legend-item">
                         <div class="linear-graph__legend-icon linear-graph__legend-icon_color_blue"></div>
-                        <span class="linear-graph__legend-text">Вклады НурФинанс</span>
+                        <span class="linear-graph__legend-text">Вклады с нами</span>
                       </li>
                     </ul>
                   </div>
@@ -418,7 +417,7 @@
 
                   <li class="opportunities__profit-item">
                     <h4 class="opportunities__profit-text">
-                      <span class="opportunities__profit-text opportunities__profit-text_style_bold">НурФинанс</span>
+                      <span class="opportunities__profit-text opportunities__profit-text_style_bold">У нас</span>
                       высокая ликвидность
                     </h4>
                     <div class="opportunities__profit-icon opportunities__profit-icon_style_blue">
@@ -565,7 +564,7 @@
       <div class="footer__container">
 
         <div class="footer__wrapper">
-          <img class="logo footer__logo" src="<%=require('../images/logo.svg')%>" alt="Логотип финансовой компании">
+          <img class="logo footer__logo" src="<%=require('../images/logo.png')%>" alt="Логотип финансовой компании">
           <div class="footer__search">
             <button class="button footer__search-button"></button>
             <input class="footer__search-input" type="text" placeholder="Поиск по услугам">
@@ -575,9 +574,9 @@
         <div class="footer__wrapper">
 
           <div class="footer__contacts">
-            <p class="footer__phone">8 800 2700 700</p>
-            <p class="footer__email">support@nur.finance</p>
-            <p class="footer__address">Казань, ул. Мавлютова, дом 31</p>
+            <p class="footer__phone">8 800 000 000</p>
+            <p class="footer__email">support@finance</p>
+            <p class="footer__address">Москва, ул. Садовая, дом 23</p>
             <p class="footer__work-time">Мы работаем с 08:00 до 20:00</p>
             <ul class="list footer__socials">
               <li class="footer__socials-item">
@@ -645,7 +644,7 @@
               сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.</p>
           </div>
           <div class="footer__info">
-            <p class="footer__copyright">&copy; 2021 АО «НурФинанс»</p>
+            <p class="footer__copyright">&copy; 2021, Финансования компания</p>
             <a href="#" class="link footer__legal-docs">Политика конфиденциальности</a>
           </div>
         </div>
