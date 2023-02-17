@@ -24,7 +24,7 @@
         <div class="header__menu">
           <h2 class="header__title">Инвестиционно-финансовая компания</h2>
           <ul class="list nav header__nav">
-            <li class="nav__item"><a class="link header__location" role="button" href="#" aria-label="Текущий регион" title="Выбрать регион из списка">город Москва</a></li>
+            <li class="nav__item"><a class="link header__location" role="button" href="#" aria-label="Текущий регион" title="Выбрать регион из списка">Набережные Челны</a></li>
             <li class="nav__item"><a class="link nav__link" href="#">О компании</a></li>
             <li class="nav__item"><a class="link nav__link" href="#">Отзывы</a></li>
             <li class="nav__item"><a class="link nav__link" href="#">Халяль подробно</a></li>
@@ -36,8 +36,12 @@
           <a class="link header__lang-switcher" role="button" href="#" aria-label="Русский язык" title="Выбрать язык из списка">ru</a>
         </div>
         <div class="header__content">
+          <button class="button button_style_burger"></button>
           <a class="link" href="#">
-            <img class="logo header__logo" src="<%=require('../images/logo.png')%>" alt="Логотип финансовой компании">
+            <div class="logo">
+              <div class="logo__logomark"></div>
+              <h1 class="logo__wordmark">ФИНАНС</h1>
+            </div>
           </a>
           <ul class="list nav header__nav">
             <li class="nav__item"><a class="link nav__link" href="#">Инвестиции</a></li>
@@ -82,7 +86,7 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
 
-                  <h1 class="intro__slide-title">Инвестируйте с повышенной доходностью до 19% годовых</h1>
+                  <h2 class="intro__slide-title">Инвестируйте с повышенной доходностью до 19% годовых</h2>
                   <p class="intro__slide-text">100% обеспеченность активами, прибыль каждые 3 месяца!</p>
                   <img class="intro__slide-img" src="<%=require('../images/pics/bgr-man-01.png')%>" alt="Фоновая картинка мужчины, окрыленного условиями инвестирования">
                   <div class="intro__buttons">
@@ -234,7 +238,7 @@
                       <span class="form__data-key">Срок инвестирования</span>
                       <span class="form__data-measure">
                         <span class="form__data-measure-value" id="investmentPeriodText"></span>
-                        <span class="form__data-measure-index">месяца</span>
+                        <span class="form__data-measure-index">мес.</span>
                       </span>
                     </div>
                     <input class="form__input" type="range" id="investmentPeriod" name="investmentPeriod" min="6" max="36" value="24" step="1">
@@ -255,7 +259,7 @@
                       <span class="form__data-label">Пополнение вклада</span>
                       <span class="form__data-measure">
                         <span class="form__data-measure-value" id="addedSumText"></span>
-                        <span class="form__data-measure-index">&#8381; / в месяц</span>
+                        <span class="form__data-measure-index">&#8381; / мес.</span>
                       </span>
                     </div>
                     <input class="form__input" type="range" id="addedSum" name="addedSum" min="10000" max="150000" value="30000" step="10000">
@@ -564,7 +568,12 @@
       <div class="footer__container">
 
         <div class="footer__wrapper">
-          <img class="logo footer__logo" src="<%=require('../images/logo.png')%>" alt="Логотип финансовой компании">
+          <a class="link" href="#">
+            <div class="logo">
+              <div class="logo__logomark"></div>
+              <h1 class="logo__wordmark">ФИНАНС</h1>
+            </div>
+          </a>
           <div class="footer__search">
             <button class="button footer__search-button"></button>
             <input class="footer__search-input" type="text" placeholder="Поиск по услугам">

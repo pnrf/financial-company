@@ -36,6 +36,14 @@
   list-style: none;
 }
 
+.button_style_burger {
+  width: 32px;
+  height: 32px;
+  background: center / contain no-repeat url('../images/icons/burger.svg');
+}
+
+
+
 /* ---------- section ---------- */
 
 .section {
@@ -147,6 +155,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 24px;
+  white-space: nowrap;
 }
 
 .header__lang-switcher {
@@ -186,9 +195,55 @@
 }
 
 .header__logo {
-  padding-top: 10px;
-  width: 228px;
+  /* padding-top: 10px; */
+  width: 169px;
   height: 46px;
+}
+
+.logo {
+  width: 169px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.logo__logomark {
+  margin: 0 15px;
+  width: 10px;
+  height: 46px;
+  position: relative;
+  background-color: #355DFB;
+  border-radius: 64px 6px;
+}
+
+.logo__logomark::before {
+  content: '';
+  width: 10px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background-color: #60AAFB;
+  border-radius: 64px 6px 6px 64px;
+}
+
+.logo__logomark::after {
+  content: '';
+  width: 10px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  background-color: #0000DE;
+  border-radius: 6px 64px 64px 6px;
+}
+
+.logo__wordmark {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #000;
 }
 
 .phone {
@@ -1227,12 +1282,13 @@
 }
 
 .footer__logo {
-  margin-right: 104px;
-  width: 156px;
-  height: 32px;
+  /* margin-right: 104px; */
+  /* width: 156px; */
+  height: 53px;
 }
 
 .footer__search {
+  margin-left: 67px;
   padding-left: 11px;
   width: 891px;
   height: 48px;
