@@ -73,12 +73,16 @@ const interestRateText = profitCalcResultsElm.querySelector('#interestRateId');
 const profitAmountText = profitCalcResultsElm.querySelector('#profitAmountId');
 const profitAmountTotalText = profitCalcResultsElm.querySelector('#profitAmountTotalId');
 
-depositAmountText.textContent = depositAmountInput.value;
+function numberWithSpaces(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}
+
+depositAmountText.textContent = numberWithSpaces(depositAmountInput.value);
 investmentPeriodText.textContent = investmentPeriodInput.value;
-addedSumText.textContent = addedSumInput.value;
+addedSumText.textContent = numberWithSpaces(addedSumInput.value);
 
 depositAmountInput.addEventListener("input", (event) => {
-  depositAmountText.textContent = depositAmountInput.value;
+  depositAmountText.textContent = numberWithSpaces(depositAmountInput.value);
   calculateProfit();
 });
 
@@ -88,14 +92,14 @@ investmentPeriodInput.addEventListener("input", (event) => {
 });
 
 addedSumInput.addEventListener("input", (event) => {
-  addedSumText.textContent = addedSumInput.value;
+  addedSumText.textContent = numberWithSpaces(addedSumInput.value);
   calculateProfit();
 });
 
 const calculateProfit = () => {
-  const initialDepositAmount = Number(depositAmountText.textContent);
-  const investmentPeriod = Number(investmentPeriodText.textContent);
-  const addedSum = Number(addedSumText.textContent);
+  const initialDepositAmount = Number(depositAmountInput.value);
+  const investmentPeriod = Number(investmentPeriodInput.value);
+  const addedSum = Number(addedSumInput.value);
 
   const depositAmountTotal = initialDepositAmount + addedSum * (investmentPeriod - 2);
 
@@ -125,8 +129,8 @@ const calculateProfit = () => {
   const profitAmountTotal = profitAmount + depositAmountTotal;
 
   interestRateText.textContent = interestRate;
-  profitAmountText.textContent = profitAmount;
-  profitAmountTotalText.textContent = profitAmountTotal;
+  profitAmountText.textContent = profitAmount.toLocaleString();
+  profitAmountTotalText.textContent = profitAmountTotal.toLocaleString();
 };
 
 calculateProfit();
