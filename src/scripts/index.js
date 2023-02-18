@@ -1,5 +1,7 @@
 import '../styles/index.css';
 
+import Chart from 'chart.js/auto'
+
 import Swiper, { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -84,16 +86,19 @@ addedSumText.textContent = numberWithSpaces(addedSumInput.value);
 depositAmountInput.addEventListener("input", (event) => {
   depositAmountText.textContent = numberWithSpaces(depositAmountInput.value);
   calculateProfit();
+  renderChart();
 });
 
 investmentPeriodInput.addEventListener("input", (event) => {
   investmentPeriodText.textContent = investmentPeriodInput.value;
   calculateProfit();
+  renderChart();
 });
 
 addedSumInput.addEventListener("input", (event) => {
   addedSumText.textContent = numberWithSpaces(addedSumInput.value);
   calculateProfit();
+  renderChart();
 });
 
 const calculateProfit = () => {
@@ -131,6 +136,60 @@ const calculateProfit = () => {
   interestRateText.textContent = interestRate;
   profitAmountText.textContent = profitAmount.toLocaleString();
   profitAmountTotalText.textContent = profitAmountTotal.toLocaleString();
+
+  return profitAmount;
 };
 
-calculateProfit();
+
+// ---------- Chart js ----------
+
+// 1. Подготовить массив с данными для построения графика
+
+const createArr = () => {
+
+  const Arr = [];
+  const investmentPeriod = Number(investmentPeriodInput.value);
+  let countValue = calculateProfit();
+
+  for (let i=0; i <= investmentPeriod; i++) {
+    Arr.push({ month: i, count: Math.floor(countValue / (investmentPeriod - i)) });
+  };
+
+  console.log(Arr);
+  return Arr;
+};
+
+// 2. Создать график
+let myChart = null;
+
+
+const createChart = (data) =>  {
+  return myChart = new Chart(
+      document.getElementById('acquisitions'),
+      {
+        type: 'bar',
+        data: {
+          labels: data.map(row => row.month),
+          datasets: [
+            {
+              label: 'Выплата процентов, ежемесячно',
+              data: data.map(row => row.count)
+            }
+          ]
+        }
+      }
+    );
+};
+
+// 3. Отрисовать график на странице
+
+async function renderChart() {
+  if (myChart) {
+    myChart.destroy();
+  };
+
+  const data = createArr();
+  createChart(data);
+};
+
+renderChart();
