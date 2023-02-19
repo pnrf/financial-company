@@ -137,22 +137,36 @@ const calculateProfit = () => {
   profitAmountText.textContent = profitAmount.toLocaleString();
   profitAmountTotalText.textContent = profitAmountTotal.toLocaleString();
 
-  return profitAmount;
+  return {profitAmount, profitAmountTotal};
 };
 
 
 // ---------- Chart js ----------
 
-// 1. Подготовить массив с данными для построения графика
+// 1. Подготовить массивы с данными для построения графика
 
 const createArr = () => {
 
   const Arr = [];
   const investmentPeriod = Number(investmentPeriodInput.value);
-  let countValue = calculateProfit();
+  let countValue = calculateProfit().profitAmount;
 
-  for (let i=0; i <= investmentPeriod; i++) {
-    Arr.push({ month: i, count: Math.floor(countValue / (investmentPeriod - i)) });
+  for (let i=1; i <= investmentPeriod; i++) {
+    Arr.push({ month: i, count: Math.floor(countValue / (investmentPeriod - (i - 1))) });
+  };
+
+  console.log(Arr);
+  return Arr;
+};
+
+const createArr2 = () => {
+
+  const Arr= [];
+  const investmentPeriod = Number(investmentPeriodInput.value);
+  let countValue = calculateProfit().profitAmountTotal;
+
+  for (let i=1; i <= investmentPeriod; i++) {
+    Arr.push({ month: i, count: Math.floor(countValue / (investmentPeriod - (i - 1))) });
   };
 
   console.log(Arr);
@@ -163,20 +177,95 @@ const createArr = () => {
 let myChart = null;
 
 
-const createChart = (data) =>  {
+const createChart = (data, data2) =>  {
   return myChart = new Chart(
       document.getElementById('acquisitions'),
       {
-        type: 'bar',
+        type: 'line',
+
         data: {
           labels: data.map(row => row.month),
+
           datasets: [
+
             {
+              fill: {
+                target: 'origin',
+                above: 'rgba(0, 0, 222, 0.2)',
+              },
+              // backgroundColor: 'rgba(0, 0, 222, 0.1)',
               label: 'Выплата процентов, ежемесячно',
-              data: data.map(row => row.count)
+              data: data.map(row => row.count),
+              borderColor: 'rgba(0, 0, 222, 1)',
+              // backgroundColor: '#9BD0F5',
+              pointRadius: 0,
+            },
+
+            {
+              fill: {
+                target: 'origin',
+                above: 'rgba(53, 93, 251, 0.1)',
+              },
+              label: 'Сумма инвестиций, ежемесячно',
+              type: 'scatter', // 'line' dataset default does not affect this dataset since it's a 'scatter'
+              data: data2.map(row => row.count),
+              showLine: true,
             }
+
           ]
-        }
+        },
+
+        options: {
+          responsive: true,
+          scales: {
+            x: {
+              grid: {
+                color: 'rgba(198, 217, 233, 0.5)',
+                borderColor: 'grey',
+                tickColor: 'transparent'
+              },
+              ticks: {
+                display: false,
+              }
+            },
+            y: {
+              grid: {
+                display: false,
+              },
+              ticks: {
+                display: false,
+              }
+            }
+          },
+
+          animation: false,
+          plugins: {
+            legend: {
+              display: false
+            },
+            tooltip: {
+              enabled: false
+            },
+            // filler: {
+            //   propagate: true
+            // }
+          },
+          elements: {
+            line: {
+              borderColor: 'rgba(0, 0, 222, 1)',
+              borderWidth: '1',
+            },
+
+            point: {
+              radius: '3',
+              borderColor: 'rgba(0, 0, 222, 1)',
+              borderWidth: '1',
+              pointBackgroundColor: 'rgba(240, 244, 248, 1)',
+            }
+          }
+        },
+
+        plugins: []
       }
     );
 };
@@ -189,7 +278,8 @@ async function renderChart() {
   };
 
   const data = createArr();
-  createChart(data);
+  const data2 = createArr2();
+  createChart(data, data2);
 };
 
 renderChart();
