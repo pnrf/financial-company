@@ -182,12 +182,9 @@ const createChart = (data, data2) =>  {
       document.getElementById('acquisitions'),
       {
         type: 'line',
-
         data: {
           labels: data.map(row => row.month),
-
           datasets: [
-
             {
               fill: {
                 target: 'origin',
@@ -198,7 +195,6 @@ const createChart = (data, data2) =>  {
               borderColor: 'rgba(0, 0, 222, 1)',
               pointRadius: 0,
             },
-
             {
               fill: {
                 target: 'origin',
@@ -208,10 +204,8 @@ const createChart = (data, data2) =>  {
               data: data2.map(row => row.count),
               showLine: true,
             }
-
           ]
         },
-
         options: {
           responsive: true,
           maintainAspectRatio: false,
@@ -232,7 +226,6 @@ const createChart = (data, data2) =>  {
               }
             }
           },
-
           animation: false,
           plugins: {
             legend: {
@@ -247,7 +240,6 @@ const createChart = (data, data2) =>  {
               borderColor: 'rgba(0, 0, 222, 1)',
               borderWidth: '2',
             },
-
             point: {
               radius: '4',
               borderColor: 'rgba(0, 0, 222, 1)',
@@ -255,9 +247,7 @@ const createChart = (data, data2) =>  {
               pointBackgroundColor: 'rgba(240, 244, 248, 1)',
             }
           }
-        },
-
-        plugins: []
+        }
       }
     );
 };

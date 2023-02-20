@@ -132,6 +132,7 @@
   font-weight: inherit;
   font-size: inherit;
   line-height: inherit;
+  white-space: nowrap;
 }
 
 .header__location {
@@ -170,13 +171,6 @@
   text-transform: uppercase;
 }
 
-/* .header__lang {
-  margin: auto;
-  text-align: center;
-  text-transform: uppercase;
-  border: 1px solid red;
-} */
-
 .header__content {
   margin: 20px 0;
   width: 100%;
@@ -195,7 +189,6 @@
 }
 
 .header__logo {
-  /* padding-top: 10px; */
   width: 169px;
   height: 46px;
 }
@@ -209,41 +202,44 @@
 }
 
 .logo__logomark {
-  margin: 0 15px;
-  width: 10px;
+  margin: 0 12px;
+  width: 8px;
   height: 46px;
   position: relative;
-  background-color: #355DFB;
-  border-radius: 64px 6px;
+  background-color: #60AAFB;
+  border-radius: 6px 64px;
 }
 
 .logo__logomark::before {
   content: '';
-  width: 10px;
+  width: 8px;
   height: 30px;
   position: absolute;
   top: 8px;
-  right: 12px;
-  background-color: #60AAFB;
+  right: 10px;
+  background-color: #79a6c3;
   border-radius: 64px 6px 6px 64px;
 }
 
 .logo__logomark::after {
   content: '';
-  width: 10px;
+  width: 8px;
   height: 30px;
   position: absolute;
   top: 8px;
-  left: 12px;
-  background-color: #0000DE;
+  left: 10px;
+  background-color: #355DFB;
   border-radius: 6px 64px 64px 6px;
 }
 
 .logo__wordmark {
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 120%;
   color: #000;
+  text-transform: uppercase;
 }
 
 .phone {
@@ -659,69 +655,9 @@
   justify-content: space-between;
 }
 
-.profit-calc__chart {
-  width: 385px;
-  height: 374px;
-  position: relative;
-  background: left bottom/ 290px 374px no-repeat url('../images/pics/chart-bgr.svg'),
-              left bottom/ 390px 374px no-repeat url('../images/pics/chart-lines.svg');
-
+.profit-calc-title {
+  padding: 0;
 }
-
-.profit-calc__chart-point-01 {
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  bottom: -2px;
-  left: -1px;
-  background: center/ 10px 10px no-repeat url('../images/pics/chart-point.svg');
-}
-
-.profit-calc__chart-point-02 {
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  bottom: 10px;
-  left: 55px;
-  background: center/ 10px 10px no-repeat url('../images/pics/chart-point.svg');
-}
-
-.profit-calc__chart-point-03 {
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  bottom: 28px;
-  left: 112px;
-  background: center/ 10px 10px no-repeat url('../images/pics/chart-point.svg');
-}
-
-.profit-calc__chart-point-04 {
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  bottom: 54px;
-  left: 168px;
-  background: center/ 10px 10px no-repeat url('../images/pics/chart-point.svg');
-}
-
-.profit-calc__chart-point-05 {
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  bottom: 90px;
-  left: 225px;
-  background: center/ 10px 10px no-repeat url('../images/pics/chart-point.svg');
-}
-
-.profit-calc__chart-point-06 {
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  bottom: 142px;
-  left: 282px;
-  background: center/ 10px 10px no-repeat url('../images/pics/chart-point.svg');
-}
-
 
 .form {
   display: flex;
@@ -825,6 +761,14 @@
   padding: 0;
   font-weight: 400;
   font-size: 14px;
+  line-height: 110%;
+}
+
+.profit__disclaimer {
+  margin-top: 30px;
+  padding: 0;
+  color: #6e9bb8;
+  font-size: 12px;
   line-height: 110%;
 }
 
@@ -1139,7 +1083,6 @@
   height: 1px;
   background: linear-gradient(90deg, rgba(198, 217, 233, 0) 0%, #C6D9E9 49.48%, rgba(198, 217, 233, 0) 100%);
   background-repeat: no-repeat;
-  /* transform: matrix(0, 1, 1, 0, 0, 0); */
 }
 
 .opportunities__profit-list {
@@ -1284,8 +1227,6 @@
 }
 
 .footer__logo {
-  /* margin-right: 104px; */
-  /* width: 156px; */
   height: 53px;
 }
 
