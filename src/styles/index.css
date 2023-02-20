@@ -655,7 +655,8 @@
 .profit-calc__container {
   display: flex;
   align-items: flex-end;
-  gap: 41px;
+  /* gap: 41px; */
+  justify-content: space-between;
 }
 
 .profit-calc__chart {
@@ -781,6 +782,7 @@
 
 .profit-calc__results {
   padding-left: 34px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   width: 309px;

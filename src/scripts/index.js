@@ -191,23 +191,20 @@ const createChart = (data, data2) =>  {
             {
               fill: {
                 target: 'origin',
-                above: 'rgba(0, 0, 222, 0.2)',
+                above: '#EBEFFF',
               },
-              // backgroundColor: 'rgba(0, 0, 222, 0.1)',
               label: 'Выплата процентов, ежемесячно',
               data: data.map(row => row.count),
               borderColor: 'rgba(0, 0, 222, 1)',
-              // backgroundColor: '#9BD0F5',
               pointRadius: 0,
             },
 
             {
               fill: {
                 target: 'origin',
-                above: 'rgba(53, 93, 251, 0.1)',
+                above: '#E5E5FC',
               },
               label: 'Сумма инвестиций, ежемесячно',
-              type: 'scatter', // 'line' dataset default does not affect this dataset since it's a 'scatter'
               data: data2.map(row => row.count),
               showLine: true,
             }
@@ -217,6 +214,7 @@ const createChart = (data, data2) =>  {
 
         options: {
           responsive: true,
+          maintainAspectRatio: false,
           scales: {
             x: {
               grid: {
@@ -224,9 +222,6 @@ const createChart = (data, data2) =>  {
                 borderColor: 'grey',
                 tickColor: 'transparent'
               },
-              ticks: {
-                display: false,
-              }
             },
             y: {
               grid: {
@@ -246,20 +241,17 @@ const createChart = (data, data2) =>  {
             tooltip: {
               enabled: false
             },
-            // filler: {
-            //   propagate: true
-            // }
           },
           elements: {
             line: {
               borderColor: 'rgba(0, 0, 222, 1)',
-              borderWidth: '1',
+              borderWidth: '2',
             },
 
             point: {
-              radius: '3',
+              radius: '4',
               borderColor: 'rgba(0, 0, 222, 1)',
-              borderWidth: '1',
+              borderWidth: '2',
               pointBackgroundColor: 'rgba(240, 244, 248, 1)',
             }
           }
