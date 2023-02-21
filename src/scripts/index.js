@@ -155,7 +155,6 @@ const createArr = () => {
     Arr.push({ month: i, count: Math.floor(countValue / (investmentPeriod - (i - 1))) });
   };
 
-  console.log(Arr);
   return Arr;
 };
 
@@ -169,7 +168,6 @@ const createArr2 = () => {
     Arr.push({ month: i, count: Math.floor(countValue / (investmentPeriod - (i - 1))) });
   };
 
-  console.log(Arr);
   return Arr;
 };
 

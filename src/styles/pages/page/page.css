@@ -12,7 +12,7 @@
 
 @media screen and (min-width: 1420px) {
   .page {
-    border-radius: var(--border-radius-64) var(--border-radius-6);
+    border-radius: 64px 6px;
     box-shadow: 6px 6px 70px rgba(0, 0, 0, 0.09);
   }
 }

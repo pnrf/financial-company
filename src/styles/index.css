@@ -3,11 +3,9 @@
 @import url('../vendor/fonts/fonts.css');
 @import url('./variables/variables.css');
 
-/** page */
-@import url('./page/page.css');
-
-/** root */
-@import url('./root/root.css');
+@import url('./pages/index.css');
+@import url('./components/index.css');
+@import url('./sections/index.css');
 
 /** swiper */
 @import url('../vendor/swiper/swiper.css');
@@ -37,6 +35,7 @@
 }
 
 .button_style_burger {
+  display: none;
   width: 32px;
   height: 32px;
   background: center / contain no-repeat url('../images/icons/burger.svg');
@@ -46,27 +45,26 @@
 
 /* ---------- section ---------- */
 
-.section {
+/* .section {
   position: relative;
   width: 100%;
-}
+} */
 
-.section__container {
+/* .section__container {
   position: relative;
   margin: 0 auto;
   max-width: 1620px;
   width: 100%;
   overflow: hidden;
-}
+} */
 
 .section__wrapper {
   margin: 0 auto;
   padding-top: 59px;
   padding-bottom: 17px;
-  max-width: 1420px;
-  width: 1368px;
+  max-width: 1368px;
   background: #F0F4F8;
-  border-radius: var(--border-radius-64) var(--border-radius-6);
+  border-radius: 64px 6px;
 }
 
 .section__content {
@@ -83,20 +81,20 @@
   line-height: 110%;
 }
 
-.section__subtitle {
+/* .section__subtitle {
   margin: 24px 0 0;
   max-width: 442px;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-}
+} */
 
-.section__text {
+/* .section__text {
   margin: 24px 0 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-}
+} */
 
 /* ---------- header ---------- */
 
@@ -434,12 +432,23 @@
 /* ---------- intro ---------- */
 
 .intro {
+  margin: 0 auto;
   background-color: #F0F4F8;
-  position: relative;
+}
+
+.intro__bgr {
+  margin: 0 auto;
+  max-width: 1620px;
+  background: center / contain no-repeat url('../images/pics/bgr-abstract-01.svg');
 }
 
 .intro__container {
-  background: center / contain no-repeat url('../images/pics/bgr-abstract-01.svg');
+  position: relative;
+  margin: 0 auto;
+  max-width: 1245px;
+  width: 100%;
+  overflow: hidden;
+  /* background: center / contain no-repeat url('../images/pics/bgr-abstract-01.svg'); */
 }
 
 .intro__slide-img {
