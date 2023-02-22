@@ -1,7 +1,8 @@
 :root {
 /* @media */
 --desktop: (min-width: 1920px);
---laptop-l: 1440px;
+--laptop-xl: 1440px;
+--laptop-l: 1280px;
 --laptop: (min-width: 1024px);
 --tablet: (min-width: 768px);
 --mobile-l: (min-width: 425px);

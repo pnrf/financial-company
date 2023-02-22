@@ -21,41 +21,49 @@
     <!-- header -->
     <header class="header">
       <div class="header__container">
-        <div class="header__menu">
+
+        <div class="header__row">
           <h2 class="header__title">Инвестиционно-финансовая компания</h2>
-          <ul class="list nav header__nav">
-            <li class="nav__item"><a class="link header__location" role="button" href="#" aria-label="Текущий регион" title="Выбрать регион из списка">Набережные Челны</a></li>
-            <li class="nav__item"><a class="link nav__link" href="#">О компании</a></li>
-            <li class="nav__item"><a class="link nav__link" href="#">Отзывы</a></li>
-            <li class="nav__item"><a class="link nav__link" href="#">Халяль подробно</a></li>
-            <li class="nav__item"><a class="link nav__link" href="#">Отчетность</a></li>
-            <li class="nav__item"><a class="link nav__link" href="#">Наши партнеры</a></li>
-            <li class="nav__item"><a class="link nav__link" href="#">Сотрудничество</a></li>
-            <li class="nav__item"><a class="link nav__link nav__link_bgr_img" href="#">Контакты</a></li>
-          </ul>
-          <a class="link header__lang-switcher" role="button" href="#" aria-label="Русский язык" title="Выбрать язык из списка">ru</a>
+          <a class="link location-switcher" role="button" href="#" aria-label="Текущий регион" title="Выбрать регион из списка">Набережные Челны</a>
+          <nav class="navbar">
+            <ul class="navbar__list">
+              <li class="navbar__item navbar__item_style_blur"><a class="navbar__link" href="#">О компании</a></li>
+              <li class="navbar__item navbar__item_style_blur"><a class="navbar__link" href="#">Отзывы</a></li>
+              <li class="navbar__item navbar__item_style_blur"><a class="navbar__link" href="#">Халяль подробно</a></li>
+              <li class="navbar__item navbar__item_style_blur"><a class="navbar__link" href="#">Отчетность</a></li>
+              <li class="navbar__item navbar__item_style_blur"><a class="navbar__link" href="#">Наши партнеры</a></li>
+              <li class="navbar__item navbar__item_style_blur"><a class="navbar__link" href="#">Сотрудничество</a></li>
+              <li class="navbar__item navbar__item_style_blur"><a class="navbar__link navbar__link_bgr_img" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <a class="link lang-switcher header__lang-switcher" role="button" href="#" aria-label="Русский язык" title="Выбрать язык из списка">ru</a>
         </div>
-        <div class="header__content">
+
+        <div class="header__row">
           <button class="button button_style_burger"></button>
-          <a class="link" href="#">
-            <div class="logo">
-              <h1 class="logo__wordmark">
-                ваши
-                <div class="logo__logomark"></div>
-                финансы</h1>
-            </div>
+          <a class="link logo" href="#">
+            <h1 class="logo__wordmark">
+              ваши
+              <div class="logo__logomark"></div>
+              финансы
+            </h1>
           </a>
-          <ul class="list nav header__nav">
-            <li class="nav__item"><a class="link nav__link" href="#">Инвестиции</a></li>
-            <li class="nav__item"><a class="link nav__link" href="#">Рассрочка</a></li>
-            <li class="nav__item"><a class="link nav__link" href="#">Калькулятор</a></li>
-          </ul>
+          <nav class="navbar">
+            <ul class="navbar__list">
+              <li class="navbar__item"><a class="navbar__link" href="#">Инвестиции</a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#">Рассрочка</a></li>
+              <li class="navbar__item"><a class="navbar__link" href="#">Калькулятор</a></li>
+            </ul>
+          </nav>
 
           <div class="header__wrapper">
-            <a class="link phone header__phone" href="tel:+88002700700-">8 800 000 000</a>
+            <a class="link header__phone" href="tel:+000000x00-">8 800 000 000</a>
             <div class="header__search">
-              <a class="header__search-btn" aria-label="Поиск по сайту" href="#"></a>
-              <div class="header__search-overlay"></div>
+              <a class="header__search-button" aria-label="Поиск по сайту" href="#"></a>
+              <form class="header__search-form">
+                <button class="button header__search-button"></button>
+                <input class="header__search-input" aria-label="Поиск по сайту" placeholder=" Введите текст" type="search" name="search-query">
+              </form>
             </div>
 
             <a class="button button_type_link button_size_l button_style_blue" role="button" href="#" target="_blank" rel="noopener noreferrer" aria-label="Личный кабинет" title="Перейти к авторизации в личный кабинет">Личный кабинет</a>
@@ -81,11 +89,13 @@
       <section class="intro">
         <div class="intro__bgr">
           <div class="intro__container">
+
             <div class="swiper swiper_section_intro">
               <div class="link swiper__button-prev swiper__button-prev_section_intro"></div>
               <div class="link swiper__button-next swiper__button-next_section_intro"></div>
               <div class="swiper-pagination swiper-pagination_section_intro swiper-pagination_position"></div>
               <div class="swiper-wrapper">
+
                 <div class="swiper-slide">
                   <h2 class="intro__slide-title">Инвестируйте с повышенной доходностью до 19% годовых</h2>
                   <p class="intro__slide-text">100% обеспеченность активами, прибыль каждые 3 месяца!</p>
@@ -95,11 +105,14 @@
                     <a class="button button_type_link button_size_s button_style_white" href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>
                   </div>
                 </div>
+
                 <div class="swiper-slide">
                   <img class="intro__slide-img" src="<%=require('../images/pics/bgr-man-01.png')%>" alt="Фоновая картинка мужчины, окрыленного условиями инвестирования">
                 </div>
+
               </div>
             </div>
+
           </div>
         </div>
       </section>
