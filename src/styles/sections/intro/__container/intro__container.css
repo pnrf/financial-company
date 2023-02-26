@@ -1,0 +1,15 @@
+.intro__container {
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  max-width: 1245px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1620px) {
+  .intro__container {
+    padding: 0;
+  }
+}

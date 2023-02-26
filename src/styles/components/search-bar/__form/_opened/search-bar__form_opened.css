@@ -1,0 +1,4 @@
+.search-bar__form_opened {
+  display: flex;
+  justify-content: flex-start;
+}

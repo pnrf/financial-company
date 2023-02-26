@@ -1,0 +1,11 @@
+.search-bar__form {
+  display: none;
+  align-items: center;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  width: 184px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 20px 0;
+}

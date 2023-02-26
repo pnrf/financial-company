@@ -1,0 +1,32 @@
+/** section */
+@import url('./section/section.css');
+@import url('./section/__container/section__container.css');
+@import url('./section/__wrapper/section__wrapper.css');
+@import url('./section/__content/section__content.css');
+@import url('./section/__title/section__title.css');
+@import url('./section/__subtitle/section__subtitle.css');
+@import url('./section/__text/section__text.css');
+
+/** header */
+@import url('./header/header.css');
+@import url('./header/__button-account/header__button-account.css');
+@import url('./header/__button-request/header__button-request.css');
+@import url('./header/__buttons/header__buttons.css');
+@import url('./header/__container/header__container.css');
+@import url('./header/__content/header__content.css');
+@import url('./header/__lang-switcher/header__lang-switcher.css');
+@import url('./header/__logo/header__logo.css');
+@import url('./header/__navbar/header__navbar.css');
+@import url('./header/__navigation/header__navigation.css');
+@import url('./header/__phone/header__phone.css');
+@import url('./header/__search-bar/header__search-bar.css');
+@import url('./header/__title/header__title.css');
+@import url('./header/__wrapper/header__wrapper.css');
+
+/** intro */
+@import url('./intro/intro.css');
+@import url('./intro/__bgr/intro__bgr.css');
+@import url('./intro/__container/intro__container.css');
+
+/** main */
+@import url('./main/main.css');

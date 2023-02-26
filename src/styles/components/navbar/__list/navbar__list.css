@@ -1,0 +1,10 @@
+.navbar__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  white-space: nowrap;
+  list-style: none;
+}

@@ -1,0 +1,11 @@
+.header__search-bar {
+  /* display: none; */
+  padding-top: 5px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .header__search-bar {
+    display: block;
+  }
+}

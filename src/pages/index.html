@@ -13,7 +13,7 @@
 <body class="root">
   <div class="page">
     <noscript id="nojs">
-      <div style="margin: 10px auto; padding: 10px 30px; color: #FFF; background-color: #0000DE; font-family: Ubuntu, OpenSans,sans-serif; text-align:center; border-radius: 20px 0;">
+      <div style="margin: 10px 10px; padding: 10px 30px; color: #FFF; background-color: #0000DE; font-family: Ubuntu, OpenSans,sans-serif; text-align:center; border-radius: 20px 0;">
         Для корректной работы сайта, пожалуйста, включите JavaScript в настройках вашего браузера
       </div>
     </noscript>
@@ -22,10 +22,10 @@
     <header class="header">
       <div class="header__container">
 
-        <div class="header__row">
+        <div class="header__navigation">
           <h2 class="header__title">Инвестиционно-финансовая компания</h2>
           <a class="link location-switcher" role="button" href="#" aria-label="Текущий регион" title="Выбрать регион из списка">Набережные Челны</a>
-          <nav class="navbar">
+          <nav class="navbar header__navbar">
             <ul class="navbar__list">
               <li class="navbar__item navbar__item_style_blur"><a class="navbar__link" href="#">О компании</a></li>
               <li class="navbar__item navbar__item_style_blur"><a class="navbar__link" href="#">Отзывы</a></li>
@@ -39,7 +39,7 @@
           <a class="link lang-switcher header__lang-switcher" role="button" href="#" aria-label="Русский язык" title="Выбрать язык из списка">ru</a>
         </div>
 
-        <div class="header__row">
+        <div class="header__content">
           <button class="button button_style_burger"></button>
           <a class="link logo header__logo" href="#">
             <h1 class="logo__wordmark">
@@ -48,24 +48,26 @@
               финансы
             </h1>
           </a>
-          <nav class="navbar">
-            <ul class="navbar__list">
-              <li class="navbar__item"><a class="navbar__link" href="#">Инвестиции</a></li>
-              <li class="navbar__item"><a class="navbar__link" href="#">Рассрочка</a></li>
-              <li class="navbar__item"><a class="navbar__link" href="#">Калькулятор</a></li>
-            </ul>
-          </nav>
 
           <div class="header__wrapper">
+            <nav class="navbar">
+              <ul class="navbar__list">
+                <li class="navbar__item"><a class="navbar__link" href="#">Инвестиции</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Рассрочка</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="#">Калькулятор</a></li>
+              </ul>
+            </nav>
             <a class="link header__phone" href="tel:+000000x00-">8 800 000 000</a>
-            <div class="header__search">
-              <a class="header__search-button" aria-label="Поиск по сайту" href="#"></a>
-              <form class="header__search-form">
-                <button class="button header__search-button"></button>
-                <input class="header__search-input" aria-label="Поиск по сайту" placeholder=" Введите текст" type="search" name="search-query">
+            <div class="search-bar header__search-bar">
+              <a class="search-bar__button" aria-label="Поиск по сайту" href="#"></a>
+              <form class="search-bar__form">
+                <button class="button search-bar__button"></button>
+                <input class="search-bar__form-input" aria-label="Поиск по сайту" placeholder=" Введите текст" type="search" name="search-query">
               </form>
             </div>
+          </div>
 
+          <div class="header__buttons">
             <a class="button button_type_link button_size_174x48 button_style_blue header__button-account" role="button" href="#" target="_blank" rel="noopener noreferrer" aria-label="Личный кабинет" title="Перейти к авторизации в личный кабинет">Личный кабинет</a>
             <button class="button button_size_174x48 button_style_white header__button-request">Онлайн-заявка</button>
           </div>
@@ -97,12 +99,16 @@
               <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
-                  <h2 class="intro__slide-title">Инвестируйте с повышенной доходностью до 19% годовых</h2>
-                  <p class="intro__slide-text">100% обеспеченность активами, прибыль каждые 3 месяца!</p>
-                  <img class="intro__slide-img" src="<%=require('../images/pics/bgr-man-01.png')%>" alt="Фоновая картинка мужчины, окрыленного условиями инвестирования">
-                  <div class="intro__buttons">
-                    <a class="button button_type_link button_size_xl button_style_blue" href="#" target="_blank" rel="noopener noreferrer">Инвестировать</a>
-                    <a class="button button_type_link button_size_s button_style_white" href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>
+                  <div class="intro__slide-container">
+                    <div class="intro__slide-wrapper">
+                      <h2 class="intro__slide-title">Инвестируйте с <span class="intro__slide-title intro__slide-title_display_none">повышенной</span> доходностью до <span class="intro__slide-title intro__slide-title_style_highlighted">19%</span> годовых</h2>
+                      <p class="intro__slide-text">100% обеспеченность активами, прибыль каждые 3 месяца!</p>
+                      <div class="intro__slide-buttons">
+                        <a class="button button_type_link button_size_190x68 button_style_blue intro__button-invest" href="#" target="_blank" rel="noopener noreferrer">Инвестировать</a>
+                        <a class="button button_type_link button_size_159x68 button_style_white intro__button-more" href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>
+                      </div>
+                    </div>
+                    <img class="intro__slide-img" src="<%=require('../images/pics/bgr-man-01.png')%>" alt="Фоновая картинка мужчины, окрыленного условиями инвестирования">
                   </div>
                 </div>
 
@@ -262,7 +268,7 @@
                       <span class="form__data-key">Порядок выплаты дохода</span>
                       <div class="form__filter">
                         <button class="button button_size_224x49 button_style_white" type="button">Ежемесячно</button>
-                        <button class="button button_size_224x49 button_style_line" type="button">В конце срока</button>
+                        <button class="button button_size_224x49 button_style_outline" type="button">В конце срока</button>
                       </div>
                       </div>
                   </label>

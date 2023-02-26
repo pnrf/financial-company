@@ -1,0 +1,11 @@
+.breadcrumbs__item:not(.breadcrumbs__item:last-child):after {
+  content: '';
+  width: 4px;
+  height: 8px;
+  background: center / contain no-repeat url('../../../../images/icons/arrow-left-breadcrumbs.svg');
+  padding: 0 10px;
+  color: #8FB1C7;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 110%;
+}

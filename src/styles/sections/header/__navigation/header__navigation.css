@@ -1,0 +1,17 @@
+.header__navigation {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__navigation {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+    border-bottom: 1px solid #CBD8E9;
+  }
+}

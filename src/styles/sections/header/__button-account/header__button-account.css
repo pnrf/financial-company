@@ -1,0 +1,13 @@
+.header__button-account {
+  width: 110px;
+  height: 31px;
+  font-size: 11px;
+}
+
+@media screen and (min-width: 390px) {
+  .header__button-account {
+    width: 127px;
+    height: 31px;
+    font-size: 12px;
+  }
+}

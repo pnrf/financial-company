@@ -22,16 +22,37 @@
   transform: rotate(180deg);
  }
 
- .swiper__button-prev {
-  position: absolute;
-  bottom: 123px;
-  right: 46px;
-  z-index: 10;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #fff url('../../images/icons/arrow-left-slider-btn.svg') 50%/7.5px 15px no-repeat;
- }
+.swiper__button-prev {
+position: absolute;
+bottom: 123px;
+right: 46px;
+z-index: 10;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: #fff url('../../images/icons/arrow-left-slider-btn.svg') 50%/7.5px 15px no-repeat;
+}
+
+.swiper__button-prev_section_intro {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper__button-prev_section_intro {
+    display: block;
+  }
+}
+
+.swiper__button-next_section_intro {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper__button-next_section_intro {
+    display: block;
+  }
+}
+
 
  .swiper__button-prev_section_reviews {
   bottom: 78px;

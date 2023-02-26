@@ -1,0 +1,14 @@
+.navbar__link_bgr_img {
+  position: relative;
+  padding-right: 25px;
+}
+
+.navbar__link_bgr_img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: center / contain no-repeat url('../../../../../images/icons/leaflet.svg');
+  width: 16px;
+  height: 16px;
+}

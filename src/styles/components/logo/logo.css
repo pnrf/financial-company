@@ -1,0 +1,7 @@
+.logo {
+  /* width: 205px; */
+  height: 46px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}

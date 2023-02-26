@@ -1,0 +1,9 @@
+.search-bar__button {
+  display: inline-block;
+  padding-left: 9px;
+  padding-right: 9px;
+  box-sizing: unset;
+  background: center / contain no-repeat url('../../../../images/icons/loupe.svg');
+  width: 24px;
+  height: 24px;
+}

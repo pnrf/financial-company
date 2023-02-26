@@ -1,0 +1,13 @@
+.search-bar__form-input {
+  width: 100%;
+  padding: 13px 15px 12px 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #000;
+}

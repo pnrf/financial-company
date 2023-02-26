@@ -1,0 +1,11 @@
+.button_style_outline {
+  padding: 14px;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: #6E9BB8;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  border: 1px solid #C6D9E9;
+  border-radius: 20px 0px;
+}

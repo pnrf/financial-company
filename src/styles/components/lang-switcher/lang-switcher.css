@@ -1,0 +1,22 @@
+.lang-switcher {
+  display: none;
+  width: 2.34em;
+  height: 1.34em;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 2px;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #6E9BB8;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 425px) {
+  .lang-switcher {
+    display: flex;
+  }
+}

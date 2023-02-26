@@ -1,0 +1,10 @@
+.intro__bgr {
+  margin: 0 auto;
+  max-width: 1620px;
+}
+
+@media screen and (min-width: 1620px) {
+  .intro__bgr {
+    background: center / contain no-repeat url('../../../../images/pics/bgr-abstract-01.svg');
+  }
+}

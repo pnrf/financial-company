@@ -1,0 +1,21 @@
+.logo__wordmark {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 120%;
+  color: #000;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 390px) {
+  .logo__wordmark {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo__wordmark {
+    font-size: 20px;
+  }
+}

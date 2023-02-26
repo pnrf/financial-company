@@ -1,0 +1,5 @@
+.button_style_burger {
+  width: 32px;
+  height: 32px;
+  background: center / contain no-repeat url('../../../../images/icons/burger.svg');
+}

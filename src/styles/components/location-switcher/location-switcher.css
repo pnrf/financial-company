@@ -1,0 +1,28 @@
+.location-switcher {
+  display: none;
+  margin: 0 10px;
+  padding-left: 20px;
+  padding-right: 16px;
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #6E9BB8;
+  white-space: nowrap;
+}
+
+.location-switcher::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: center / contain no-repeat url('../../../images/icons/arrow-region-selection.svg');
+  width: 12px;
+  height: 12px;
+}
+
+@media screen and (min-width: 425px) {
+  .location-switcher {
+    display: block;
+  }
+}
