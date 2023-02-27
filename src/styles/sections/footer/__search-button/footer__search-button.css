@@ -1,0 +1,5 @@
+.footer__search-button {
+  width: 28px;
+  height: 28px;
+  background: center/ 28px 28px no-repeat url('../../../../images/icons/loupe-black.svg');
+}

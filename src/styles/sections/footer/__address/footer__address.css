@@ -1,0 +1,14 @@
+.footer__address {
+  margin: 27px 0 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 110%;
+  color: #0000DE;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__address {
+    margin: 45px 0 0;
+  }
+}

@@ -1,0 +1,13 @@
+.footer__info {
+  margin-top: 44px;
+  display: flex;
+  gap: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__info {
+    margin-top: 60px;
+    /* display: flex; */
+    gap: 30px;
+  }
+}

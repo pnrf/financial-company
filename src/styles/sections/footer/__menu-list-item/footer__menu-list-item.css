@@ -1,0 +1,4 @@
+.footer__menu-list-item {
+  display: flex;
+  flex-direction: column;
+}

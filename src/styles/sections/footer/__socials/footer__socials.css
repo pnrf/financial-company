@@ -1,0 +1,11 @@
+.footer__socials {
+  margin-top: 37px;
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__socials {
+    margin-top: 46px;
+  }
+}

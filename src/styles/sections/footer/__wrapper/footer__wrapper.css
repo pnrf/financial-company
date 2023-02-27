@@ -1,0 +1,18 @@
+.footer__wrapper {
+  /* margin-bottom: 73px; */
+  margin: 0 25px 0 26px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* gap: 57px; */
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__wrapper {
+    margin-bottom: 73px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 84px;
+  }
+}

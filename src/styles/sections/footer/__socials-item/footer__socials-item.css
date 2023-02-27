@@ -1,0 +1,10 @@
+.footer__socials-item {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}

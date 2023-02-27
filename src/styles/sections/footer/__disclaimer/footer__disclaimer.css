@@ -1,0 +1,9 @@
+.footer__disclaimer {
+  margin-top: 44px;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__disclaimer {
+    margin-top: 69px;
+  }
+}

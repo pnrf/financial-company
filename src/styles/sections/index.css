@@ -7,6 +7,35 @@
 @import url('./section/__subtitle/section__subtitle.css');
 @import url('./section/__text/section__text.css');
 
+/** footer */
+@import url('./footer/footer.css');
+@import url('./footer/__address/footer__address.css');
+@import url('./footer/__contacts/footer__contacts.css');
+@import url('./footer/__container/footer__container.css');
+@import url('./footer/__copyright/footer__copyright.css');
+@import url('./footer/__disclaimer-text/footer__disclaimer-text.css');
+@import url('./footer/__disclaimer-title/footer__disclaimer-title.css');
+@import url('./footer/__disclaimer/footer__disclaimer.css');
+@import url('./footer/__email/footer__email.css');
+@import url('./footer/__info/footer__info.css');
+@import url('./footer/__legal-docs/footer__legal-docs.css');
+@import url('./footer/__legal/footer__legal.css');
+@import url('./footer/__logo/footer__logo.css');
+@import url('./footer/__menu-list-item/footer__menu-list-item.css');
+@import url('./footer/__menu-list-subtitle/footer__menu-list-subtitle.css');
+@import url('./footer/__menu-list-title/footer__menu-list-title.css');
+@import url('./footer/__menu-list/footer__menu-list.css');
+@import url('./footer/__menu/footer__menu.css');
+@import url('./footer/__phone/footer__phone.css');
+@import url('./footer/__search-button/footer__search-button.css');
+@import url('./footer/__search-input/footer__search-input.css');
+@import url('./footer/__search/footer__search.css');
+@import url('./footer/__socials-item/footer__socials-item.css');
+@import url('./footer/__socials-logo/footer__socials-logo.css');
+@import url('./footer/__socials/footer__socials.css');
+@import url('./footer/__work-time/footer__work-time.css');
+@import url('./footer/__wrapper/footer__wrapper.css');
+
 /** header */
 @import url('./header/header.css');
 @import url('./header/__button-account/header__button-account.css');

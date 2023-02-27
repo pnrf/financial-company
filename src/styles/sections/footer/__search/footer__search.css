@@ -1,0 +1,19 @@
+.footer__search {
+  /* margin-left: 67px; */
+  padding-left: 15px;
+  width: 339px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__search {
+    margin-left: 67px;
+    padding-left: 11px;
+    width: 891px;
+    /* height: 48px; */
+  }
+}

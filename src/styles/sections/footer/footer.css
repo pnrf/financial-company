@@ -1,0 +1,14 @@
+.footer {
+  margin: 61px auto 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #f0f4f8;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    margin: 100px auto 0;
+  }
+}
