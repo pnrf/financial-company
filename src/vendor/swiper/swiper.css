@@ -53,7 +53,6 @@ background: #fff url('../../images/icons/arrow-left-slider-btn.svg') 50%/7.5px 1
   }
 }
 
-
  .swiper__button-prev_section_reviews {
   bottom: 78px;
   left: -100px;
@@ -71,11 +70,11 @@ background: #fff url('../../images/icons/arrow-left-slider-btn.svg') 50%/7.5px 1
   background-size: 15px 30px;
  }
 
-/* .swiper .swiper-pagination_position {
+.swiper .swiper-pagination_position {
   position: absolute;
   bottom: 153px;
   left: 422px;
-} */
+}
 
 .swiper-pagination .swiper-pagination-bullet {
 	width: 15px;

@@ -1,9 +1,15 @@
 .search-bar__button {
-  display: inline-block;
-  padding-left: 9px;
-  padding-right: 9px;
-  box-sizing: unset;
-  background: center / contain no-repeat url('../../../../images/icons/loupe.svg');
-  width: 24px;
-  height: 24px;
+  display: none;
+}
+
+@media screen and (min-width: 390px) {
+  .search-bar__button {
+    display: inline-block;
+    padding-left: 9px;
+    padding-right: 9px;
+    box-sizing: unset;
+    background: center / contain no-repeat url('../../../../images/icons/loupe.svg');
+    width: 24px;
+    height: 24px;
+  }
 }

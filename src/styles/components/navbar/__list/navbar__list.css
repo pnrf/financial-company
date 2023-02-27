@@ -4,7 +4,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  gap: 14px;
   white-space: nowrap;
   list-style: none;
+}
+
+@media screen and (min-width: 390px) {
+  .navbar__list {
+    gap: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar__list {
+    gap: 24px;
+  }
 }

@@ -44,6 +44,7 @@ align-items: flex-start;
 
 @media screen and (min-width: 768px) {
   .intro__slide-img {
+    max-width: 100%;
     margin-right: 130px;
   }
 }
