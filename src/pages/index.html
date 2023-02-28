@@ -124,12 +124,12 @@
       </section>
 
       <!-- products -->
-      <section class="section products">
-        <div class="section__content">
-          <h2 class="section__title">Рекомендуемые продукты</h2>
+      <section class="products">
+        <div class="products__content">
+          <h2 class="products__title">Рекомендуемые продукты</h2>
           <div class="products__cards">
 
-            <div class="card card_size_big">
+            <div class="card card_size_l">
               <div class="card__content">
                 <h3 class="card__subtitle">Инвестиции</h3>
                 <h4 class="card__title">Вклад Комфорт</h4>
@@ -150,8 +150,8 @@
               <img class="products__card-img" src="<%=require('../images/pics/bgr-man-02.png')%>" alt="Фоновая картинка мужчины">
             </div>
 
-            <div class="card card_size_small">
-              <div class="card__wrapper">
+            <div class="card card_size_s">
+              <!-- <div class="card__wrapper"> -->
                 <div class="card__content">
                   <h3 class="card__subtitle">Финансирование</h3>
                   <h4 class="card__title">Авто Рассрочка</h4>
@@ -165,15 +165,15 @@
                   </div>
                   <p class="card__text">Отсутствие обязательности страхования КАСКО. Первоначальный взнос от 10%</p>
                   <div class="card__buttons">
-                    <a class="button button_type_link button_size_130x48 button_style_blue" href="#" target="_blank" rel="noopener noreferrer">Инвестировать</a>
+                    <a class="button button_type_link button_size_130x48 button_style_blue" href="#" target="_blank" rel="noopener noreferrer">Оформить</a>
                     <a class="button button_type_link button_size_133x48 button_style_white" href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>
                   </div>
                 </div>
                 <img class="products__card-img products__card-img_position_top" src="<%=require('../images/pics/bgr-car-01.png')%>" alt="Фоновая картинка спортивного автомобиля">
-              </div>
+              <!-- </div> -->
             </div>
 
-            <div class="card card_size_small">
+            <div class="card card_size_s">
               <div class="card__content">
                 <h3 class="card__subtitle">Финансирование</h3>
                 <h4 class="card__title">Экспресс Рассрочка</h4>
@@ -187,14 +187,14 @@
                 </div>
                 <p class="card__text">Финансирование физическим лицам для приобретения необходимых товаров</p>
                 <div class="card__buttons">
-                  <a class="button button_type_link button_size_130x48 button_style_blue" href="#" target="_blank" rel="noopener noreferrer">Инвестировать</a>
+                  <a class="button button_type_link button_size_130x48 button_style_blue" href="#" target="_blank" rel="noopener noreferrer">Оформить</a>
                   <a class="button button_type_link button_size_133x48 button_style_white" href="#" target="_blank" rel="noopener noreferrer">Подробнее</a>
                 </div>
               </div>
               <img class="products__card-img products__card-img_position_top" src="<%=require('../images/pics/bgr-washing-machine-01.png')%>" alt="Фоновая картинка мужчины">
             </div>
 
-            <div class="card card_size_big">
+            <div class="card card_size_l">
               <div class="card__content">
                 <h3 class="card__subtitle">Инвестиции</h3>
                 <h4 class="card__title">Вклад Активный</h4>
@@ -220,30 +220,30 @@
       </section>
 
       <!-- advantages -->
-      <section class="section advantages">
-        <div class="section__content advantages__content">
-          <div class="advantages__elm advantages__elm_bgr_caret">
-            <p class="advantages__elm-text">Опыт команды в сфере партнерских финансов более 10 лет.
+      <section class="advantages">
+        <ul class="list advantages__content">
+          <li class="advantages__item advantages__item_bgr_caret">
+            <p class="advantages__item-text">Опыт команды в сфере партнерских финансов более 10 лет.
               </p>
-          </div>
-          <div class="advantages__elm advantages__elm_bgr_target">
-            <p class="advantages__elm-text">Соответствие деятельности компании высоким этическим и правовым стандартам</p>
-          </div>
-        </div>
+          </li>
+          <li class="advantages__item advantages__item_bgr_target">
+            <p class="advantages__item-text">Соответствие деятельности компании высоким этическим и правовым стандартам</p>
+          </li>
+        </ul>
       </section>
 
       <!-- profit calculation -->
-      <section class="section profit-calc">
-        <div class="section__wrapper profit-calc__wrapper">
-          <div class="section__content">
-            <h2 class="section__title profit-calc-title">Рассчитай свои <br> накопления и доход</h2>
+      <section class="profit-calc">
+        <div class="profit-calc__wrapper">
+          <div class="profit-calc__content">
+            <h2 class="profit-calc__title">Рассчитай свои <br> накопления и доход</h2>
             <div class="profit-calc__container">
 
               <form class="form">
                 <fieldset class="form__fieldset">
                   <label class="form__label">
                     <div class="form__data">
-                      <span class="form__data-key">Сумма вклада</span>
+                      <span class="form__data-label">Сумма вклада</span>
                       <span class="form__data-measure">
                         <span class="form__data-measure-value" id="depositAmountText"></span>
                         <span class="form__data-measure-index">&#8381;</span>
@@ -254,7 +254,7 @@
 
                   <label class="form__label">
                     <div class="form__data">
-                      <span class="form__data-key">Срок инвестирования</span>
+                      <span class="form__data-label">Срок инвестирования</span>
                       <span class="form__data-measure">
                         <span class="form__data-measure-value" id="investmentPeriodText"></span>
                         <span class="form__data-measure-index">мес.</span>
@@ -265,10 +265,10 @@
 
                   <label class="form__label">
                     <div class="form__data form__data_type_flex-column">
-                      <span class="form__data-key">Порядок выплаты дохода</span>
+                      <span class="form__data-label">Порядок выплаты дохода</span>
                       <div class="form__filter">
-                        <button class="button button_size_224x49 button_style_white" type="button">Ежемесячно</button>
-                        <button class="button button_size_224x49 button_style_outline" type="button">В конце срока</button>
+                        <button class="button button_size_224x49 button_style_white form__filter-button" type="button">Ежемесячно</button>
+                        <button class="button button_size_224x49 button_style_outline form__filter-button" type="button">В конце срока</button>
                       </div>
                       </div>
                   </label>
@@ -287,7 +287,7 @@
                 </fieldset>
               </form>
 
-              <div style="width: 385px; height: 374px; overflow: hidden;">
+              <div class="chart-bar" style="width: 385px; height: 374px; overflow: hidden;">
                 <div style="width: 422px; height: 440px; margin: -30px auto auto -15px;">
                   <canvas id="acquisitions" width="400px" height="390px" aria-label="Доходность накоплений" role="img" style="border-radius: 64px 6px;"></canvas>
                 </div>
@@ -321,11 +321,11 @@
                   </li>
 
                 </ul>
-                <button class="button button_size_190x68 button_style_blue" type="button">Онлайн-заявка</button>
+                <button class="button button_size_190x68 button_style_blue" type="button">Инвестировать</button>
               </div>
 
             </div>
-            <p class="profit__disclaimer">* Не является публичной офертой. Калькулятор работает в тестовом режиме. <br> Отоброжаемые значения не соответствуют реальным данным.</p>
+            <p class="profit__disclaimer">* Не является публичной офертой. Калькулятор работает в тестовом режиме. Отоброжаемые значения не соответствуют реальным данным.</p>
           </div>
         </div>
       </section>

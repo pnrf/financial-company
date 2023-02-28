@@ -170,39 +170,86 @@ align-items: flex-start;
 /* ---------- products ---------- */
 
 .products {
-  margin-top: 98px;
+  margin-top: 45px;
+}
+
+@media screen and (min-width: 1368px) {
+  .products {
+    margin-top: 98px;
+  }
+}
+
+.products__content {
+  margin: 0 auto;
+  max-width: 1245px;
+  position: relative;
+}
+
+.products__title {
+  margin: 0 25px 0 26px;
+  padding-bottom: 30px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 110%;
+}
+
+@media screen and (min-width: 1368px) {
+  .products__title {
+    margin: 0;
+    font-size: 34px;
+  }
 }
 
 .products__cards {
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  padding: 0;
 }
 
 .card {
+  margin: 0 25px 0 26px;
   display: flex;
   background-color: #F0F4F8;
-  border-radius: 6px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
-.card_size_big {
-  width: 825px;
-  align-items: flex-end;
+@media screen and (min-width: 1368px) {
+  .card {
+    border-radius: 6px;
+  }
 }
 
-.card_size_small {
+.card_size_l {
+  width: 405px;
+  /* align-items: flex-end; */
+}
+
+@media screen and (min-width: 1368px) {
+  .card_size_l {
+    width: 825px;
+    align-items: flex-end;
+  }
+}
+
+.card_size_s {
   width: 405px;
 }
 
-.card__wrapper {
+/* .card__wrapper {
   display: flex;
   align-items: center;
-}
+} */
 
 .card__content {
-  margin: 32px 0 38px 40px;
+  margin: 27px 0 32px 34px;
+}
+
+@media screen and (min-width: 1368px) {
+  .card__content {
+    margin: 32px 0 38px 40px;
+  }
 }
 
 .card__subtitle {
@@ -218,14 +265,26 @@ align-items: flex-start;
   margin: 0;
   padding-bottom: 20px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 110%;
   color: #000;
 }
 
+@media screen and (min-width: 1368px) {
+  .card__title {
+    font-size: 24px;
+  }
+}
+
 .card__stat-data {
-  margin: 0 35px 26px 0;
+  margin: 0 22px 18px 0;
   display: inline-block;
+}
+
+@media screen and (min-width: 1368px) {
+  .card__stat-data {
+    margin: 0 35px 26px 0;
+  }
 }
 
 .card__stat-data_margin-bottom_s {
@@ -236,17 +295,29 @@ align-items: flex-start;
   margin: 0;
   padding: 0;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 110%;
   color: #355DFB;
 }
 
+@media screen and (min-width: 1368px) {
+  .card__stat-data-value {
+    font-size: 36px;
+  }
+}
+
 .cart__stat-data-value_font-size_s {
-  font-size: 32px;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 1368px) {
+  .cart__stat-data-value_font-size_s {
+    font-size: 32px;
+  }
 }
 
 .card__stat-data-label {
-  margin: 0;
+  margin: 5px 0 0;
   padding: 0;
   font-weight: 400;
   font-size: 14px;
@@ -258,9 +329,15 @@ align-items: flex-start;
   margin: 0;
   padding-bottom: 27px;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 140%;
   color: #6E9BB8;
+}
+
+@media screen and (min-width: 1368px) {
+  .cart__text {
+    font-size: 16px;
+  }
 }
 
 .card__buttons {
@@ -280,45 +357,90 @@ align-items: flex-start;
 /* ---------- advantages ---------- */
 
 .advantages {
-  margin-top: 118px;
+  margin: 86px 25px 0 26px;
   margin-bottom: -66px;
   z-index: 1000;
 }
 
-.advantages__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
+@media screen and (min-width: 1368px) {
+  .advantages {
+    margin-top: 118px;
+  }
 }
 
-.advantages__elm {
-  width: 615px;
-  height: 135px;
+.advantages__content {
+  margin: 0 auto;
+  max-width: 1245px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 17px;
+}
+
+@media screen and (min-width: 1368px) {
+  .advantages__content {
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+
+.advantages__item {
+  width: 339px;
+  height: 90px;
   border-radius: 10px;
 }
 
-.advantages__elm_bgr_caret {
-  background: left / contain no-repeat url('../images/icons/caret-double-right.svg');
+@media screen and (min-width: 1368px) {
+  .advantages__item {
+    width: 615px;
+    height: 135px;
+  }
+}
+
+.advantages__item_bgr_caret {
+  background: left no-repeat url('../images/icons/caret-double-right.svg');
+  background-size: 54px 54px;
   background-color: #0000DE;
 }
 
-.advantages__elm_bgr_target {
-  background: left / contain no-repeat url('../images/icons/target.svg');
+@media screen and (min-width: 1368px) {
+  .advantages__item_bgr_caret {
+    background-size: 90px 90px;
+  }
+}
+
+.advantages__item_bgr_target {
+  background: left no-repeat url('../images/icons/target.svg');
+  background-size: 54px 54px;
   background-color: #0000DE;
 }
 
-.advantages__elm-text {
+@media screen and (min-width: 1368px) {
+  .advantages__item_bgr_target {
+    background-size: 90px 90px;
+  }
+}
+
+.advantages__item-text {
   margin: 0;
-  padding: 20px 48px 20px 135px;
-  max-width: 440px;
+  padding: 17px 24px 17px 84px;
+  max-width: 231px;
   font-weight: 400;
-  font-size: 27px;
+  font-size: 16px;
   line-height: 110%;
   color: #fff;
   overflow: hidden;
   text-overflow: ellipsis;
+}
 
+@media screen and (min-width: 1368px) {
+  .advantages__item-text {
+    padding: 20px 48px 20px 135px;
+    max-width: 440px;
+    font-size: 27px;
+  }
 }
 
 /* ---------- profit calculation ---------- */
@@ -328,28 +450,78 @@ align-items: flex-start;
 }
 
 .profit-calc__wrapper {
-  padding-top: 169px;
-  padding-bottom: 110px;
+  margin: 0 auto;
+  padding-top: 114px;
+  padding-bottom: 35px;
+  max-width: 390px;
+  background: #F0F4F8;
+  border-radius: 30px;
+}
+
+@media screen and (min-width: 1368px) {
+  .profit-calc__wrapper {
+    padding-top: 169px;
+    padding-bottom: 110px;
+    max-width: 1368px;
+    border-radius: 64px 6px;
+  }
+}
+
+.profit-calc__content {
+  margin: 0 25px 0 26px;
+  max-width: 1245px;
+  /* width: 100%; */
+  position: relative;
+}
+
+@media screen and (min-width: 1368px) {
+  .profit-calc__content {
+    margin: 0 auto;
+  }
+}
+
+.profit-calc__title {
+  margin: 0;
+  padding-bottom: 30px;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 110%;
+}
+
+@media screen and (min-width: 1368px) {
+  .profit-calc__title {
+    font-size: 34px;
+  }
 }
 
 .profit-calc__container {
   display: flex;
-  align-items: flex-end;
-  /* gap: 41px; */
+  flex-direction: column;
+  /* align-items: center; */
   justify-content: space-between;
 }
 
-.profit-calc-title {
-  padding: 0;
+@media screen and (min-width: 1368px) {
+  .profit-calc__container {
+    flex-direction: row;
+    align-items: flex-end;
+  }
 }
 
 .form {
-  display: flex;
-  width: 460px;
-  align-items: flex-end;
+  width: 339px;
+  /* display: flex;
+  align-items: flex-end; */
+}
+
+@media screen and (min-width: 1368px) {
+  .form {
+    width: 460px;
+  }
 }
 
 .form__fieldset {
+  width: inherit;
   margin: 0;
   padding: 0;
   display: flex;
@@ -358,7 +530,9 @@ align-items: flex-start;
   gap: 34px;
 }
 
-.form__label {}
+.form__label {
+  width: inherit;
+}
 
 .form__data {
   display: flex;
@@ -374,15 +548,27 @@ align-items: flex-start;
 
 .form__data-label {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 100%;
+}
+
+@media screen and (min-width: 1368px) {
+  .form__data-label {
+    font-size: 16px;
+  }
 }
 
 .form__data-measure {
   display: inline-block;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 100%;
+}
+
+@media screen and (min-width: 1368px) {
+  .form__data-measure {
+    font-size: 18px;
+  }
 }
 
 .form__data-measure-index {
@@ -391,16 +577,58 @@ align-items: flex-start;
 
 .form__input {
   margin-top: 12px;
-  width: 460px;
+  width: 339px;
   height: 6px;
+}
+
+@media screen and (min-width: 1368px) {
+  .form__input {
+    width: 460px;
+  }
 }
 
 .form__filter {
   display: flex;
-  gap: 12px;
+  gap: 8px;
+}
+
+@media screen and (min-width: 1368px) {
+  .form__filter {
+    gap: 12px;
+  }
+}
+
+.form__filter-button {
+  padding: 0;
+  width: 165px;
+  height: 36px;
+  font-size: 14px;
+  border-radius: 16px 0;
+}
+
+@media screen and (min-width: 1368px) {
+  .form__filter-button {
+    padding: 14px;
+    width: 224px;
+    height: 49px;
+    font-size: 16px;
+    border-radius: 20px 0;
+  }
+}
+
+.chart-bar {
+  display: none;
+}
+
+@media screen and (min-width: 1368px) {
+  .chart-bar {
+    display: block;
+  }
 }
 
 .profit-calc__results {
+  margin: 29px auto 0;
+  /* margin-top: 29px; */
   padding-left: 34px;
   box-sizing: border-box;
   display: flex;
@@ -409,6 +637,19 @@ align-items: flex-start;
   height: 374px;
   background-color: #fff;
   border-radius: 10px 10px 120px 10px;
+}
+
+@media screen and (min-width: 1368px) {
+  .profit-calc__results {
+    padding-left: 34px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 309px;
+    height: 374px;
+    background-color: #fff;
+    border-radius: 10px 10px 120px 10px;
+  }
 }
 
 .profit-calc__results-list {
