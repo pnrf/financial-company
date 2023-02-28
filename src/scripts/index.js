@@ -45,9 +45,26 @@ const swiperSectionIntro = new Swiper(".swiper_section_intro", {
 const swiperSectionReviews = new Swiper(".swiper-section-reviews", {
   modules: [Navigation],
 
-  slidesPerView: 3,
-	spaceBetween: 15,
-  slidesPerGroup: 3,
+  breakpoints: {
+    320: {
+      slidesPerView: 1.2,
+      spaceBetween: 14,
+      // slidesPerGroup: 1,
+    },
+
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 14,
+      // slidesPerGroup: 1,
+    },
+
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+      // slidesPerGroup: 3,
+    }
+  },
+
   loop: true,
   // loopFillGroupWithBlank: true,
 
@@ -56,6 +73,8 @@ const swiperSectionReviews = new Swiper(".swiper-section-reviews", {
     nextEl: '.swiper__button-next_section_reviews',
   },
 });
+
+swiperSectionReviews.width = 339;
 
 
 // ---------- Calculator ----------

@@ -462,12 +462,12 @@
       </section>
 
       <!-- reviews -->
-      <section class="section reviews">
-          <div class="section__content">
-            <h2 class="section__title">Отзывы клиентов</h2>
+      <section class="reviews">
+          <div class="reviews__content">
+            <h2 class="reviews__title">Отзывы клиентов</h2>
           </div>
-          <div class="section__wrapper reviews__wrapper">
-            <div class="section__content">
+          <div class="reviews__wrapper">
+            <div class="reviews__content">
               <div class="link swiper__button-prev swiper__button-prev_section_reviews"></div>
               <div class="link swiper__button-next swiper__button-next_section_reviews"></div>
 
@@ -475,102 +475,96 @@
                 <div class="swiper-wrapper">
 
                   <div class="swiper-slide">
-                    <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-01.png')%>" alt="Заставка для видео с фотографией клиента">
-                    <div class="reviews__slide-play-btn"></div>
-                    <p class="reviews__slide-user-name">Евгений Садков</p>
-                    <p class="reviews__slide-product-name">Программа  –  Экспресс Рассрочка</p>
+                    <div class="reviews__slide-wrapper">
+                      <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-01.png')%>" alt="Заставка для видео с фотографией клиента">
+                      <div class="reviews__slide-play-btn"></div>
+                      <p class="reviews__slide-user-name">Евгений Садков</p>
+                      <p class="reviews__slide-product-name">Программа  –  Экспресс Рассрочка</p>
+                    </div>
                   </div>
 
                   <div class="swiper-slide">
-                    <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-02.png')%>" alt="Заставка для видео с фотографией клиента">
-                    <div class="reviews__slide-play-btn"></div>
-                    <p class="reviews__slide-user-name">Евгений Майер</p>
-                    <p class="reviews__slide-product-name">Инвестиции  –  Вклад Активный</p>
+                    <div class="reviews__slide-wrapper">
+                      <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-02.png')%>" alt="Заставка для видео с фотографией клиента">
+                      <div class="reviews__slide-play-btn"></div>
+                      <p class="reviews__slide-user-name">Евгений Майер</p>
+                      <p class="reviews__slide-product-name">Инвестиции  –  Вклад Активный</p>
+                    </div>
                   </div>
 
                   <div class="swiper-slide">
-                    <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-03.png')%>" alt="Заставка для видео с фотографией клиента">
-                    <div class="reviews__slide-play-btn"></div>
-                    <p class="reviews__slide-user-name">Фанзиль Гарипов</p>
-                    <p class="reviews__slide-product-name">Программа  –  Авто Рассрочка</p>
+                    <div class="reviews__slide-wrapper">
+                      <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-03.png')%>" alt="Заставка для видео с фотографией клиента">
+                      <div class="reviews__slide-play-btn"></div>
+                      <p class="reviews__slide-user-name">Фанзиль Гарипов</p>
+                      <p class="reviews__slide-product-name">Программа  –  Авто Рассрочка</p>
+                    </div>
                   </div>
-
-                  <!-- <div class="swiper-slide">
-                    <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-02.png')%>" alt="Заставка для видео с фотографией клиента">
-                    <p class="reviews__slide-user-name">Евгений Майер</p>
-                    <p class="reviews__slide-product-name">1</p>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img class="reviews__slide-img" src="<%=require('../images/pics/reviews-movie-slide-img-02.png')%>" alt="Заставка для видео с фотографией клиента">
-                    <p class="reviews__slide-user-name">Евгений Майер</p>
-                    <p class="reviews__slide-product-name">2</p>
-                  </div> -->
 
                 </div>
               </div>
             </div>
-            <a class="button button_type_link button_size_405x48 button_style_white" href="#" target="_blank">Смотреть больше отзывов</a>
+            <a class="button button_type_link button_size_405x48 button_style_white reviews__button" href="#" target="_blank">Смотреть больше отзывов</a>
           </div>
       </section>
 
       <!-- info -->
-      <section class="section info">
-        <div class="section__content">
-          <h2 class="section__title">Полезная информация</h2>
+      <section class="info">
+        <div class="info__content">
+          <h2 class="info__title">Полезная информация</h2>
           <ul class="info__cards">
 
             <li class="info__card">
-              <img class="info__icon" src="<%=require('../images/icons/question.svg')%>" alt="Фоновая иконка для раздела Полезная информация">
-              <h3 class="info__subtitle">Ответы</h3>
-              <h4 class="info__title">Часто задаваемые <br> вопросы</h4>
-              <ul class="info__list">
-                <li class="info__list-item">
-                  <p class="info__text">Что такое инвестиции?</p>
-                  <p class="info__text">Зачем нужно инвестировать?</p>
+              <img class="info__card-icon" src="<%=require('../images/icons/question.svg')%>" alt="Фоновая иконка для раздела Полезная информация">
+              <h3 class="info__card-subtitle">Ответы</h3>
+              <h4 class="info__card-title">Часто задаваемые <br> вопросы</h4>
+              <ul class="info__card-list">
+                <li class="info__card-list-item">
+                  <p class="info__card-text">Что такое инвестиции?</p>
+                  <p class="info__card-text">Зачем нужно инвестировать?</p>
                 </li>
-                <li class="info__list-item">
-                  <p class="info__text">Какие стратегии инвестирования существуют и какую лучше выбрать?</p>
+                <li class="info__card-list-item">
+                  <p class="info__card-text">Какие стратегии инвестирования существуют и какую лучше выбрать?</p>
                 </li>
-                <li class="info__list-item">
-                  <p class="info__text">Как защищены мои инвестиции?</p>
-                  <p class="info__text">Что будет, если компания обанкротится?</p>
-                </li>
-              </ul>
-            </li>
-
-            <li class="info__card">
-              <img class="info__icon" src="<%=require('../images/icons/circle-half.svg')%>" alt="Фоновая иконка для раздела Полезная информация">
-              <h3 class="info__subtitle">Халяль</h3>
-              <h4 class="info__title">Отличие исламских инвестиций от неисламских</h4>
-              <ul class="info__list">
-                <li class="info__list-item">
-                  <p class="info__text">Термин «Риба» - что такое ростовщические операциии?</p>
-                </li>
-                <li class="info__list-item">
-                  <p class="info__text">Как проверяют компании на соответствие нормам халяль?</p>
-                </li>
-                <li class="info__list-item">
-                  <p class="info__text">Термин «Сукук» - эквивалент исламских облигаций</p>
+                <li class="info__card-list-item">
+                  <p class="info__card-text">Как защищены мои инвестиции?</p>
+                  <p class="info__card-text">Что будет, если компания обанкротится?</p>
                 </li>
               </ul>
             </li>
 
             <li class="info__card">
-              <img class="info__icon" src="<%=require('../images/icons/graduation-cap.svg')%>" alt="Фоновая иконка для раздела Полезная информация">
-              <h3 class="info__subtitle">Полезное</h3>
-              <h4 class="info__title">Школа <br> инвестора</h4>
-              <ul class="info__list">
-                <li class="info__list-item">
-                  <p class="info__text">7 финансовых советов на 2021 год.</p>
-                  <p class="info__text">Что делать, чтобы накопить на цель?</p>
+              <img class="info__card-icon" src="<%=require('../images/icons/circle-half.svg')%>" alt="Фоновая иконка для раздела Полезная информация">
+              <h3 class="info__card-subtitle">Халяль</h3>
+              <h4 class="info__card-title">Отличие исламских инвестиций от неисламских</h4>
+              <ul class="info__card-list">
+                <li class="info__card-list-item">
+                  <p class="info__card-text">Термин «Риба» - что такое ростовщические операциии?</p>
                 </li>
-                <li class="info__list-item">
-                  <p class="info__text">Какие книги надо прочитать инвестору-новичку: топ-5 книг</p>
+                <li class="info__card-list-item">
+                  <p class="info__card-text">Как проверяют компании на соответствие нормам халяль?</p>
                 </li>
-                <li class="info__list-item">
-                  <p class="info__text">Сколько нужно денег,</p>
-                  <p class="info__text">чтобы начать инвестировать</p>
+                <li class="info__card-list-item">
+                  <p class="info__card-text">Термин «Сукук» - эквивалент исламских облигаций</p>
+                </li>
+              </ul>
+            </li>
+
+            <li class="info__card">
+              <img class="info__card-icon" src="<%=require('../images/icons/graduation-cap.svg')%>" alt="Фоновая иконка для раздела Полезная информация">
+              <h3 class="info__card-subtitle">Полезное</h3>
+              <h4 class="info__card-title">Школа <br> инвестора</h4>
+              <ul class="info__card-list">
+                <li class="info__card-list-item">
+                  <p class="info__card-text">7 финансовых советов на 2021 год.</p>
+                  <p class="info__card-text">Что делать, чтобы накопить на цель?</p>
+                </li>
+                <li class="info__card-list-item">
+                  <p class="info__card-text">Какие книги надо прочитать инвестору-новичку: топ-5 книг</p>
+                </li>
+                <li class="info__card-list-item">
+                  <p class="info__card-text">Сколько нужно денег,</p>
+                  <p class="info__card-text">чтобы начать инвестировать</p>
                 </li>
               </ul>
             </li>
@@ -583,7 +577,6 @@
     <!-- footer -->
     <footer class="footer">
       <div class="footer__container">
-
         <div class="footer__wrapper">
           <a class="link" href="#">
             <div class="logo footer__logo">
@@ -598,9 +591,7 @@
             <input class="footer__search-input" type="text" placeholder="Поиск по услугам">
           </div>
         </div>
-
         <div class="footer__wrapper">
-
           <div class="footer__contacts">
             <p class="footer__phone">8 800 000 000</p>
             <p class="footer__email">helpdesk@finance</p>
@@ -618,7 +609,6 @@
               </li>
             </ul>
           </div>
-
           <nav class="footer__menu">
             <ul class="list footer__menu-list">
               <li class="footer__menu-list-item">
@@ -629,7 +619,6 @@
                 <a href="#" class="link footer__menu-list-subtitle">Калькулятор</a>
                 <a href="#" class="link footer__menu-list-subtitle">Отзывы по инвестициям</a>
               </li>
-
               <li class="footer__menu-list-item">
                 <a href="#" class="link footer__menu-list-title">Рассрочка</a>
                 <a href="#" class="link footer__menu-list-subtitle">АвтоРассрочка</a>
@@ -638,7 +627,6 @@
                 <a href="#" class="link footer__menu-list-subtitle">Калькулятор</a>
                 <a href="#" class="link footer__menu-list-subtitle">Отзывы по займам</a>
               </li>
-
               <li class="footer__menu-list-item">
                 <a href="#" class="link footer__menu-list-title">Компания</a>
                 <a href="#" class="link footer__menu-list-subtitle">О компании</a>
@@ -647,7 +635,6 @@
                 <a href="#" class="link footer__menu-list-subtitle">Сотрудничество</a>
                 <a href="#" class="link footer__menu-list-subtitle">Реквизиты</a>
               </li>
-
               <li class="footer__menu-list-item">
                 <a href="#" class="link footer__menu-list-title">Информация</a>
                 <a href="#" class="link footer__menu-list-subtitle">Халяль подробно</a>
@@ -659,7 +646,6 @@
             </ul>
           </nav>
         </div>
-
         <div class="footer__legal">
           <div class="footer__disclaimer">
             <p class="footer__disclaimer-title">Важная информация</p>
@@ -675,13 +661,11 @@
               Не&nbsp;является публичной офертой.</p>
           </div>
           <div class="footer__info">
-            <p class="footer__copyright">&copy; 2021 Ваши финансы</p>
+            <p class="footer__copyright">&copy; 2021, АО &laquo;Финансы&raquo;</p>
             <a href="#" class="link footer__legal-docs">Политика конфиденциальности</a>
           </div>
         </div>
-
       </div>
-
     </footer>
   </div>
 </body>
