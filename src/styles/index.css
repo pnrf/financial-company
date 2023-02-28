@@ -201,14 +201,20 @@ align-items: flex-start;
 }
 
 .products__cards {
+  margin: 0 25px 0 26px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
 
+@media screen and (min-width: 1368px) {
+  .products__cards {
+    margin: 0;
+  }
+}
+
 .card {
-  margin: 0 25px 0 26px;
   display: flex;
   background-color: #F0F4F8;
   border-radius: 10px;
