@@ -8,7 +8,7 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 1620px) {
+@media screen and (min-width: 1368px) {
   .intro__container {
     padding: 0;
   }

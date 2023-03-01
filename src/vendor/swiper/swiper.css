@@ -37,7 +37,7 @@ background: #fff url('../../images/icons/arrow-left-slider-btn.svg') 50%/7.5px 1
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1368px) {
   .swiper__button-prev_section_intro {
     display: block;
   }
@@ -47,7 +47,7 @@ background: #fff url('../../images/icons/arrow-left-slider-btn.svg') 50%/7.5px 1
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1368px) {
   .swiper__button-next_section_intro {
     display: block;
   }

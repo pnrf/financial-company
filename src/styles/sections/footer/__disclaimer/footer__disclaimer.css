@@ -2,7 +2,7 @@
   margin-top: 44px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1368px) {
   .footer__disclaimer {
     margin-top: 69px;
   }

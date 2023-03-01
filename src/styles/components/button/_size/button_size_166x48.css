@@ -3,7 +3,7 @@
   height: 48px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1368px) {
   .button_size_166x48 {
     width: 166px;
   }

@@ -9,7 +9,7 @@
   white-space: nowrap;
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 1368px) {
   .header__title {
     display: block;
   }

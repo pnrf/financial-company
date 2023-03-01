@@ -2,7 +2,7 @@
   margin: 0 25px 0 26px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1368px) {
   .footer__legal {
     margin: 0;
   }

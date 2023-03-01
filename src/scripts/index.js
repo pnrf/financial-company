@@ -52,13 +52,7 @@ const swiperSectionReviews = new Swiper(".swiper-section-reviews", {
       // slidesPerGroup: 1,
     },
 
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 14,
-      // slidesPerGroup: 1,
-    },
-
-    1024: {
+    1368: {
       slidesPerView: 3,
       spaceBetween: 15,
       // slidesPerGroup: 3,

@@ -24,7 +24,7 @@
   border-bottom: 1px solid #CBD8E9;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1368px) {
   .header__border {
     display: none;
   }
@@ -40,7 +40,7 @@
   /* align-items: center; */
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1368px) {
   .intro__slide-container {
     flex-direction: row;
   }
@@ -52,7 +52,7 @@ flex-direction: column;
 align-items: flex-start;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1368px) {
   .intro__slide-wrapper {
     margin-top: 50px;
   }
@@ -62,7 +62,7 @@ align-items: flex-start;
   max-width: 339px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1368px) {
   .intro__slide-img {
     max-width: 100%;
     margin-right: 130px;
@@ -85,13 +85,13 @@ align-items: flex-start;
   /* white-space: normal; */
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 1368px) {
   .intro__slide-title {
     font-size: 32px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1368px) {
   .intro__slide-title {
     max-width: 667px;
     font-size: 44px;
@@ -121,13 +121,13 @@ align-items: flex-start;
   text-align: left;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 1368px) {
   .intro__slide-text {
     font-size: 14px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1368px) {
   .intro__slide-text {
     max-width: 667px;
     font-size: 18px;
@@ -143,7 +143,7 @@ align-items: flex-start;
   left: 0; */
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1368px) {
   .intro__slide-buttons {
     gap: 20px;
   }
@@ -161,7 +161,7 @@ align-items: flex-start;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1368px) {
   .intro__button-invest {
     width: 220px;
     height: 68px;
@@ -173,14 +173,14 @@ align-items: flex-start;
   height: 43px;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 1368px) {
   .intro__button-more {
     width: 126px;
     height: 43px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1368px) {
   .intro__button-more {
     width: 159px;
     height: 68px;
@@ -726,13 +726,25 @@ align-items: flex-start;
 /* ---------- opportunities ---------- */
 
 .opportunities {
-  margin: 109px auto 112px;
+  margin: 62px auto 62px;
+}
+
+@media screen and (min-width: 1368px) {
+  .opportunities {
+    margin: 109px auto 112px;
+  }
 }
 
 .opportunities__content {
-  margin: 0 auto;
+  margin: 0 25px 0 26px;
   max-width: 1245px;
   position: relative;
+}
+
+@media screen and (min-width: 1368px) {
+  .opportunities__content {
+    margin: 0 auto;
+  }
 }
 
 .opportunities__title {
@@ -745,7 +757,14 @@ align-items: flex-start;
 
 .opportunities__container {
   display: flex;
+  flex-direction: column;
   gap: 60px;
+}
+
+@media screen and (min-width: 1368px) {
+  .opportunities__container {
+    flex-direction: row;
+  }
 }
 
 .opportunities__theses {
@@ -762,7 +781,7 @@ align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 33px;
+  gap: 23px;
 }
 
 .opportunities__theses-item {
@@ -797,8 +816,15 @@ align-items: flex-start;
   width: 100%;
   /* height: 100%; */
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   gap: 60px;
+}
+
+@media screen and (min-width: 1368px) {
+  .opportunities__charts {
+    flex-direction: row;
+  }
 }
 
 .opportunities__charts-item {
@@ -819,10 +845,16 @@ align-items: flex-start;
   width: 100%;
   /* height: 100%; */
   display: flex;
-  gap: 51px;
+  gap: 25px;
   background-image: url('../images/pics/graph-bgr-line.svg');
   background-size: 100% 23px;
   background-repeat: repeat-y;
+}
+
+@media screen and (min-width: 1368px) {
+  .histogram {
+    gap: 51px;
+  }
 }
 
 .histogram__section {
@@ -911,10 +943,16 @@ align-items: flex-start;
 }
 
 .linear-graph__image {
-  width: 364px;
+  width: 339px;
   background-image: url('../images/pics/graph-bgr-line.svg');
   background-size: 100% 23px;
   background-repeat: no-repeat space;
+}
+
+@media screen and (min-width: 1368px) {
+  .linear-graph__image {
+    width: 364px;
+  }
 }
 
 .linear-graph__legend {
@@ -943,10 +981,15 @@ align-items: flex-start;
 }
 
 .linear-graph__legend-text {
-  width: 100px;
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
+}
+
+@media screen and (min-width: 1368px) {
+  .linear-graph__legend-text {
+    width: 100px;
+  }
 }
 
 .opportunities__profit {
@@ -964,8 +1007,15 @@ align-items: flex-start;
 
 .opportunities__profit-list {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 50px;
+}
+
+@media screen and (min-width: 1368px) {
+  .opportunities__profit-list {
+    flex-direction: row;
+  }
 }
 
 .opportunities__profit-item {
@@ -1026,6 +1076,18 @@ align-items: flex-start;
 .opportunities__profit-progress-bar_style_blue {
   width: 276px;
   background-color: #355DFB;
+}
+
+.opportunities__button {
+  margin: 40px auto 0;
+  width: 339px;
+}
+
+@media screen and (min-width: 1368px) {
+  .opportunities__button {
+    margin: -48px 0 0;
+    width: 252px;
+  }
 }
 
 /* ---------- reviews ---------- */
@@ -1196,7 +1258,7 @@ align-items: flex-start;
   margin-top: 62px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1368px) {
   .info {
     margin-top: 124px;
   }
@@ -1216,7 +1278,7 @@ align-items: flex-start;
   line-height: 110%;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1368px) {
   .info__title {
     margin: 0;
     font-size: 34px;
@@ -1233,7 +1295,7 @@ align-items: flex-start;
   list-style: none;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1368px) {
   .info__cards {
     margin: 0;
     flex-direction: row;
@@ -1280,7 +1342,7 @@ align-items: flex-start;
   padding-bottom: 28px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1368px) {
   .info__card-title {
     font-size: 22px;
   }
@@ -1321,7 +1383,7 @@ align-items: flex-start;
   color: #0000DE;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1368px) {
   .info__card-text {
     font-size: 16px;
   }

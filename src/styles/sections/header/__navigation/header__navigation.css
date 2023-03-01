@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1368px) {
   .header__navigation {
     margin: 0 auto;
     width: 100%;
