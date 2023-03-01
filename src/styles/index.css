@@ -16,6 +16,20 @@
 
 /* ---------- main ---------- */
 
+.header__border {
+  display: flex;
+  order: 2;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #CBD8E9;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__border {
+    display: none;
+  }
+}
+
 /* ---------- intro ---------- */
 .intro__slide-container {
   max-width: 100%;

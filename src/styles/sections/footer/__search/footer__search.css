@@ -1,6 +1,7 @@
 .footer__search {
   /* margin-left: 67px; */
   padding-left: 15px;
+  box-sizing: border-box;
   width: 339px;
   height: 48px;
   display: flex;

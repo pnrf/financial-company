@@ -4,3 +4,9 @@
   align-items: center;
   gap: 15px;
 }
+
+@media screen and (min-width: 1368px) {
+  .header__buttons {
+    order: unset;
+  }
+}

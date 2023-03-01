@@ -8,3 +8,8 @@
   line-height: 110%;
   color: #79A6C3;
 }
+
+.footer__search-input:focus {
+  outline: 1px solid #BDD6EC;
+  border-radius: 3px;
+}
