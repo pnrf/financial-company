@@ -383,7 +383,7 @@ align-items: flex-start;
 /* ---------- advantages ---------- */
 
 .advantages {
-  margin: 86px 25px 0 26px;
+  margin: 62px 25px 0 26px;
   margin-bottom: -66px;
   z-index: 1000;
 }
@@ -727,6 +727,20 @@ align-items: flex-start;
 
 .opportunities {
   margin: 109px auto 112px;
+}
+
+.opportunities__content {
+  margin: 0 auto;
+  max-width: 1245px;
+  position: relative;
+}
+
+.opportunities__title {
+  margin: 0;
+  padding-bottom: 30px;
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 110%;
 }
 
 .opportunities__container {
@@ -1179,7 +1193,7 @@ align-items: flex-start;
 
 /* ---------- info ---------- */
 .info {
-  margin-top: 70px;
+  margin-top: 62px;
 }
 
 @media screen and (min-width: 1440px) {
