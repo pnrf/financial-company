@@ -147,7 +147,7 @@ const calculateProfit = () => {
   const profitAmountTotal = profitAmount + depositAmountTotal;
 
   interestRateText.textContent = interestRate;
-  profitAmountText.textContent = profitAmount.toLocaleString();
+  profitAmountText.textContent = numberWithSpaces(profitAmount);
   profitAmountTotalText.textContent = profitAmountTotal.toLocaleString();
 
   return {profitAmount, profitAmountTotal};

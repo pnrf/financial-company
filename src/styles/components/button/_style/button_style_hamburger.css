@@ -1,11 +1,11 @@
-.button_style_burger {
+.button_style_hamburger {
   width: 32px;
   height: 32px;
   background: center / contain no-repeat url('../../../../images/icons/burger.svg');
 }
 
 @media screen and (min-width: 1368px) {
-  .button_style_burger {
+  .button_style_hamburger {
     display: none;
   }
 }

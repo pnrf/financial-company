@@ -1,9 +1,9 @@
 .intro__bgr {
   margin: 0 auto;
-  max-width: 1620px;
+  max-width: 1645px;
 }
 
-@media screen and (min-width: 1368px) {
+@media screen and (min-width: 1650px) {
   .intro__bgr {
     background: center / contain no-repeat url('../../../../images/pics/bgr-abstract-01.svg');
   }
